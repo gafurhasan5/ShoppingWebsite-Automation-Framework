@@ -10,9 +10,9 @@ public final class HomePage extends BroswerUtility {
 	private static final By SIGN_IN_LINK_LOCATOR = By.linkText("Sign in");
 	
 	
-	public HomePage(Browser chrome)
+	public HomePage(Browser browser)
 	{
-		super(chrome);//to call the parent class constructor from child class constructor
+		super(browser);//to call the parent class constructor from child class constructor
 		goToWebSite("https://automationpractice.techwithjatin.com/");
 	}
 	public LoginPage goToLoginPage()

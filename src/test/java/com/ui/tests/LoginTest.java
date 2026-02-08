@@ -1,12 +1,13 @@
 package com.ui.tests;
 
-import org.testng.annotations.Test;
+ import org.testng.annotations.Test;
 
 import static com.constants.Browser.*;
 import com.ui.pages.HomePage;
 
 public class LoginTest {
 	HomePage homepage;
+	@BeforeMethod(description="load the HomePage of website")
 	public void setup()
 	{
 	homepage=new HomePage(CHROME);
@@ -23,8 +24,9 @@ public class LoginTest {
 		MyAccountPage myAccountPage=loginPage.doLoginWith("rehankhan56390@gmail.com","12345");
 		String userName=myAccountPage.getUserName();*/
 		//above three line we can write in single line
-		String userName=homepage.goToLoginPage().doLoginWith("rehankhan56390@gmail.com","12345").getUserName();
-		System.out.println(userName);
+		//String userName=homepage.goToLoginPage().doLoginWith("rehankhan56390@gmail.com","12345").getUserName();
+		assertEquals(homepage.goToLoginPage().doLoginWith("rehankhan56390@gmail.com","12345").getUserName(),"Rehan khan");
+		
 		
 	}
 }
