@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.constants.Browser;
 
@@ -32,13 +33,13 @@ public abstract class BroswerUtility {
 		}
 		else if(browserName==Browser.FIREFOX)
 		{
-			driver=new ChromeDriver();
+			driver=new FirefoxDriver();
 		}
 	}
 	
-	public void goToWebSite(String Url)
+	public void goToWebSite(String URL)
 	{
-		driver.get(Url);
+		driver.get(URL);
 	}
 	public void maximizeWindow()
 	{
