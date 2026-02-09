@@ -1,7 +1,6 @@
 package com.ui.pages;
 
 import static com.constants.Env.QA;
-import static com.utility.PropertiesUtil.*;
 
 import org.openqa.selenium.By;
 
