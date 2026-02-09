@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 
 import com.constants.Browser;
 import com.utility.BroswerUtility;
+import com.utility.JSONUtility;
 
 public final class HomePage extends BroswerUtility {
 	
@@ -17,7 +18,9 @@ public final class HomePage extends BroswerUtility {
 	{
 		super(browser);//to call the parent class constructor from child class constructor
 		//goToWebSite("https://automationpractice.techwithjatin.com/");
-		goToWebSite(readProperty(QA,"URL"));
+		//goToWebSite(readProperty(QA,"URL")); //for properties file
+		goToWebSite(JSONUtility.readJSON(QA)); //for JSON file
+		
 	}
 	public LoginPage goToLoginPage()
 	{

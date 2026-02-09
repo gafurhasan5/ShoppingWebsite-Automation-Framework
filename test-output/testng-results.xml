@@ -2,22 +2,22 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-09T19:21:14 IST" name="Default suite" finished-at="2026-02-09T19:21:18 IST" duration-ms="3937">
+  <suite started-at="2026-02-09T22:40:11 IST" name="Default suite" finished-at="2026-02-09T22:40:19 IST" duration-ms="7520">
     <groups>
       <group name="sanity">
-        <method signature="LoginTest.verify_Login_Valid_Credentials()[pri:0, instance:com.ui.tests.LoginTest@49e53c76]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_Credentials()[pri:0, instance:com.ui.tests.LoginTest@2a3b5b47]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
       </group> <!-- sanity -->
       <group name="e2e">
-        <method signature="LoginTest.verify_Login_Valid_Credentials()[pri:0, instance:com.ui.tests.LoginTest@49e53c76]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_Credentials()[pri:0, instance:com.ui.tests.LoginTest@2a3b5b47]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
       </group> <!-- e2e -->
     </groups>
-    <test started-at="2026-02-09T19:21:14 IST" name="Default test" finished-at="2026-02-09T19:21:18 IST" duration-ms="3937">
+    <test started-at="2026-02-09T22:40:11 IST" name="Default test" finished-at="2026-02-09T22:40:19 IST" duration-ms="7520">
       <class name="com.ui.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@49e53c76]" started-at="2026-02-09T19:21:14 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-09T19:21:17 IST" duration-ms="2806" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@2a3b5b47]" started-at="2026-02-09T22:40:11 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-09T22:40:18 IST" duration-ms="6554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_Credentials()[pri:0, instance:com.ui.tests.LoginTest@49e53c76]" started-at="2026-02-09T19:21:17 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" finished-at="2026-02-09T19:21:18 IST" duration-ms="1058" status="PASS">
+        <test-method signature="verify_Login_Valid_Credentials()[pri:0, instance:com.ui.tests.LoginTest@2a3b5b47]" started-at="2026-02-09T22:40:18 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" finished-at="2026-02-09T22:40:19 IST" duration-ms="894" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_Credentials -->
