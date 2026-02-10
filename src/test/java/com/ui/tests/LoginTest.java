@@ -25,16 +25,28 @@ public class LoginTest {
 		 * LoginPage loginPage=homepage.goToLoginPage(); MyAccountPage
 		 * myAccountPage=loginPage.doLoginWith("rehankhan56390@gmail.com","12345");
 		 * String userName=myAccountPage.getUserName();
+		 * 
+		 * // String
+		 * userName=homepage.goToLoginPage().doLoginWith("rehankhan56390@gmail.com",
+		 * "12345").getUserName();
+		 * assertEquals(homepage.goToLoginPage().doLoginWith("rehankhan56390@gmail.com",
+		 * "12345").getUserName(), "Rehan khan");
 		 */
-		// String
-		// userName=homepage.goToLoginPage().doLoginWith("rehankhan56390@gmail.com","12345").getUserName();
-//		assertEquals(homepage.goToLoginPage().doLoginWith("rehankhan56390@gmail.com", "12345").getUserName(),
-//				"Rehan khan");
-		
+
 		// when we use DataProvider for multipledata for test
-		assertEquals(homepage.goToLoginPage().doLoginWith(user.getEmailAddress(),user.getPassword()).getUserName(),
+		assertEquals(homepage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
 				"Rehan khan");
 
+	}
+
+	
+	// using Csv file
+	@Test(description = "verifies with valid user is able to login into the application", groups = { "e2e",
+			"sanity" }, dataProviderClass = com.ui.dataProviders.LoginDataProvider.class, dataProvider = "LoginTestCSVDataProvider")
+	public void verify_Login_Valid_withCSVDATA__Credentials(User user) {
+		assertEquals(homepage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
+				"Rehan khan");
 
 	}
+
 }

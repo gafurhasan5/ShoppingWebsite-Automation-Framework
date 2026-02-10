@@ -12,20 +12,22 @@ import org.testng.annotations.DataProvider;
 import com.google.gson.Gson;
 import com.ui.pojo.TestData;
 import com.ui.pojo.User;
+import com.utility.CSVReaderUtility;
 
 public class LoginDataProvider {
 	@DataProvider(name="LoginTestDataProvider")
  public Iterator<Object[]> loginDataProvider() 
  {
-	 Gson gson =new Gson();
-	 File testDataFile=new File(System.getProperty("user.dir")+"\\testData\\logindata.json");
+	 Gson gson =new Gson();//Gson library converts JSON->java objects deserialization
+	 File testDataFile=new File(System.getProperty("user.dir")+"\\testData\\logindata.json"); //path of json data
 	 FileReader fileReader=null;
 	try {
-		fileReader = new FileReader(testDataFile);
+		fileReader = new FileReader(testDataFile);//read the json file
 	} catch (FileNotFoundException e) {
 		e.printStackTrace();
 	}
-	 TestData data=gson.fromJson(fileReader,TestData.class);
+	 TestData data=gson.fromJson(fileReader,TestData.class);//convert JSON->Java Object 
+	                                                        //Map JSON content into testData class
 	 List<Object[]>dataToReturn=new ArrayList<Object[]>();
 	 for(User user:data.getData())
 	 {
@@ -34,4 +36,9 @@ public class LoginDataProvider {
 	 return dataToReturn.iterator();
 	 
  }
+         @DataProvider(name="LoginTestCSVDataProvider")
+        public Iterator<User>loginCSVDataProvider()
+        {
+        	return CSVReaderUtility.readCSVFile("loginData.csv");
+        }
 }
