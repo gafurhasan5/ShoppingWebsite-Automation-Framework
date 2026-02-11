@@ -48,5 +48,14 @@ public class LoginTest {
 				"Rehan khan");
 
 	}
+	
+	
+	
+	@Test(description = "verifies with valid user is able to login into the application", groups = { "e2e",
+			"sanity" }, dataProviderClass = com.ui.dataProviders.LoginDataProvider.class, dataProvider = "LoginTestExcelDataProvider")
+public void verify_Login_Valid_withExcelDATA__Credentials(User user) {
+assertEquals(homepage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
+		"Angel John");
 
+}
 }
