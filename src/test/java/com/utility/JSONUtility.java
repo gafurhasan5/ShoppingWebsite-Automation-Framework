@@ -18,7 +18,6 @@ public class JSONUtility {
 		try {
 			fileReader = new FileReader(jsonFile);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		Config config = gson.fromJson(fileReader, Config.class);

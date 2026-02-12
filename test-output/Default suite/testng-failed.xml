@@ -6,7 +6,7 @@
       <class name="com.ui.tests.LoginTest">
         <methods>
           <include name="setup"/>
-          <include name="verify_Login_Valid_withExcelDATA__Credentials" invocation-numbers="0 1 2 3"/>
+          <include name="verify_Login_Valid_withExcelDATA__Credentials" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.ui.tests.LoginTest -->
     </classes>

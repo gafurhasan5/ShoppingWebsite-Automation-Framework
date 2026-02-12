@@ -35,7 +35,7 @@ public class ExcelReaderUtility {
 			while (rowIterator.hasNext()) {
 				row = rowIterator.next();
 				emailAddresscell = row.getCell(0);
-				passwordcell = row.getCell(0);
+				passwordcell = row.getCell(1);
 				user = new User(emailAddresscell.toString(), passwordcell.toString());
 				userlist.add(user);
 				xssfWorkbook.close();
