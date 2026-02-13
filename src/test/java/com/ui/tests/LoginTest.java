@@ -3,18 +3,18 @@ package com.ui.tests;
 import static com.constants.Browser.CHROME;
 import static org.testng.Assert.assertEquals;
 
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ui.pages.HomePage;
 import com.ui.pojo.User;
-import com.utility.LoggerUtility;
+
+@Listeners(com.ui.listeners.TestListener.class)
 
 public class LoginTest {
 	HomePage homepage;
-	
-	Logger logger=LoggerUtility.getLogger(this.getClass());
+
 	@BeforeMethod(description = "load the HomePage of website")
 	public void setup() {
 		homepage = new HomePage(CHROME);
@@ -54,13 +54,9 @@ public class LoginTest {
 	@Test(description = "verifies with valid user is able to login into the application", groups = { "e2e",
 			"sanity" }, dataProviderClass = com.ui.dataProviders.LoginDataProvider.class, dataProvider = "LoginTestExcelDataProvider", retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
 	public void verify_Login_Valid_withExcelDATA__Credentials(User user) {
-		
-		
-		logger.info("Started my Login Excel");
 
 		assertEquals(homepage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
 				"Angel John1");
-		logger.info("my Login Excel Completed");
 
 	}
 }

@@ -4,9 +4,9 @@
 		<Console name="console" target="SYSTEN.OUT">
 			<PatternLayout
 				pattern="%d{YYYY-MM-DD HH:mm:ss}[%t]%level %logger::%M::%L %msg %n"></PatternLayout>
-			
+
 		</Console>
-		<File name="FileLogger" fileName="Logs/automation.log" append ="false">
+		<File name="FileLogger" fileName="Logs/automation.log" append="false">
 			<PatternLayout
 				pattern="%d{YYYY-MM-DD HH:mm:ss}[%t]%level %logger %msg %n">
 			</PatternLayout>
