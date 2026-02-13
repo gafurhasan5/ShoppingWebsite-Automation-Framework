@@ -26,6 +26,10 @@ public class TestListener implements ITestListener {
 		logger.error(result.getMethod().getMethodName()+" "+ "FAILED"); 
 		logger.error(result.getThrowable());
 	}
+	public void onTestSkipped(ITestResult result) {
+		logger.warn(result.getMethod().getMethodName()+" "+ "SKIPPED"); 
+		
+	}
 
 	public void onStart(ITestContext context) {
 		logger.info("Test Suit Started");
