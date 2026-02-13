@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="0" total="9" passed="5" failed="1" skipped="0">
+<testng-results retried="3" ignored="0" total="9" passed="4" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-13T23:42:01 IST" name="Default suite" finished-at="2026-02-13T23:43:39 IST" duration-ms="98140">
+  <suite started-at="2026-02-14T00:18:14 IST" name="Default suite" finished-at="2026-02-14T00:19:56 IST" duration-ms="101579">
     <groups>
       <group name="sanity">
-        <method signature="LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
-        <method signature="LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" name="verify_Login_Valid_withCSVDATA__Credentials" class="com.ui.tests.LoginTest"/>
-        <method signature="LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" name="verify_Login_Valid_withExcelDATA__Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" name="verify_Login_Valid_withCSVDATA__Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" name="verify_Login_Valid_withExcelDATA__Credentials" class="com.ui.tests.LoginTest"/>
       </group> <!-- sanity -->
       <group name="e2e">
-        <method signature="LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
-        <method signature="LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" name="verify_Login_Valid_withCSVDATA__Credentials" class="com.ui.tests.LoginTest"/>
-        <method signature="LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" name="verify_Login_Valid_withExcelDATA__Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" name="verify_Login_Valid_withCSVDATA__Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" name="verify_Login_Valid_withExcelDATA__Credentials" class="com.ui.tests.LoginTest"/>
       </group> <!-- e2e -->
     </groups>
-    <test started-at="2026-02-13T23:42:01 IST" name="Default test" finished-at="2026-02-13T23:43:39 IST" duration-ms="98140">
+    <test started-at="2026-02-14T00:18:14 IST" name="Default test" finished-at="2026-02-14T00:19:56 IST" duration-ms="101579">
       <class name="com.ui.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:42:01 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-13T23:42:09 IST" duration-ms="8439" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:18:14 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-14T00:18:19 IST" duration-ms="4700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:42:09 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-13T23:42:12 IST" duration-ms="2139" status="PASS">
+        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:18:19 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-14T00:18:20 IST" duration-ms="996" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,11 +32,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:42:12 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-13T23:42:19 IST" duration-ms="7374" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:18:20 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-14T00:18:22 IST" duration-ms="2622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:42:19 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-13T23:42:20 IST" duration-ms="1493" status="PASS">
+        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:18:22 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-14T00:18:25 IST" duration-ms="2751" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,11 +47,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:42:20 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-13T23:42:29 IST" duration-ms="8181" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:18:25 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-14T00:18:28 IST" duration-ms="2421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:42:29 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-13T23:42:30 IST" duration-ms="1353" status="PASS">
+        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:18:28 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-14T00:18:30 IST" duration-ms="2511" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -59,14 +59,79 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='View my customer account']/span"}
+  (Session info: chrome=145.0.7632.46)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8d53fa6182de96104f069e39c361061, findElement {using=xpath, value=//a[@title='View my customer account']/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.46, chrome: {chromedriverVersion: 145.0.7632.67 (87da8db4955d..., userDataDir: C:\Users\GAHASSAN\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63247}, goog:processID: 11780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63247/devtoo..., se:cdpVersion: 145.0.7632.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d8d53fa6182de96104f069e39c361061]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='View my customer account']/span"}
+  (Session info: chrome=145.0.7632.46)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8d53fa6182de96104f069e39c361061, findElement {using=xpath, value=//a[@title='View my customer account']/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.46, chrome: {chromedriverVersion: 145.0.7632.67 (87da8db4955d..., userDataDir: C:\Users\GAHASSAN\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63247}, goog:processID: 11780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63247/devtoo..., se:cdpVersion: 145.0.7632.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d8d53fa6182de96104f069e39c361061
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+at com.utility.BroswerUtility.getVisibilityText(BroswerUtility.java:70)
+at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:16)
+at com.ui.tests.LoginTest.verify_Login_Valid_Credentials(LoginTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:42:30 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-13T23:42:35 IST" duration-ms="5131" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:18:30 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-14T00:18:33 IST" duration-ms="2829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:42:35 IST" name="verify_Login_Valid_withCSVDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestCSVDataProvider" finished-at="2026-02-13T23:42:38 IST" duration-ms="3177" status="PASS">
+        <test-method signature="verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:18:33 IST" name="verify_Login_Valid_withCSVDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestCSVDataProvider" finished-at="2026-02-14T00:18:39 IST" duration-ms="6379" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,11 +142,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_withCSVDATA__Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:42:38 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-13T23:42:45 IST" duration-ms="7032" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:18:39 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-14T00:18:45 IST" duration-ms="5731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:42:45 IST" name="verify_Login_Valid_withCSVDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestCSVDataProvider" finished-at="2026-02-13T23:42:48 IST" duration-ms="2324" status="PASS">
+        <test-method signature="verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:18:45 IST" name="verify_Login_Valid_withCSVDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestCSVDataProvider" finished-at="2026-02-14T00:18:58 IST" duration-ms="13096" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -92,11 +157,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_withCSVDATA__Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:42:49 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-13T23:42:56 IST" duration-ms="7125" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:18:59 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-14T00:19:08 IST" duration-ms="8706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:42:56 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-13T23:43:00 IST" duration-ms="4003" status="SKIP">
+        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:19:08 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-14T00:19:10 IST" duration-ms="2416" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -116,7 +181,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:58)
+at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -149,11 +214,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_withExcelDATA__Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:43:00 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-13T23:43:08 IST" duration-ms="8504" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:19:10 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-14T00:19:24 IST" duration-ms="13844" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:43:08 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-13T23:43:10 IST" duration-ms="2166" status="SKIP">
+        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:19:24 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-14T00:19:27 IST" duration-ms="2886" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -173,7 +238,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:58)
+at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -206,11 +271,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_withExcelDATA__Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:43:10 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-13T23:43:23 IST" duration-ms="12969" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:19:27 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-14T00:19:36 IST" duration-ms="9219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:43:23 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-13T23:43:25 IST" duration-ms="1549" status="SKIP">
+        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:19:36 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-14T00:19:38 IST" duration-ms="1987" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -226,9 +291,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.40.0', revision: 'b3333f1'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [320e769e6a1a24835640666a18bfd60e, findElement {value=//a[@title='View my customer account']/span, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.46, chrome: {chromedriverVersion: 145.0.7632.67 (87da8db4955d..., userDataDir: C:\Users\GAHASSAN\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60206}, goog:processID: 23248, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60206/devtoo..., se:cdpVersion: 145.0.7632.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 320e769e6a1a24835640666a18bfd60e]]>
+Command: [90b06731dfad0b68a7e3f2fb9e63835c, findElement {using=xpath, value=//a[@title='View my customer account']/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.46, chrome: {chromedriverVersion: 145.0.7632.67 (87da8db4955d..., userDataDir: C:\Users\GAHASSAN\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51216}, goog:processID: 26532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51216/devtoo..., se:cdpVersion: 145.0.7632.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 90b06731dfad0b68a7e3f2fb9e63835c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='View my customer account']/span"}
@@ -237,9 +302,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.40.0', revision: 'b3333f1'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [320e769e6a1a24835640666a18bfd60e, findElement {value=//a[@title='View my customer account']/span, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.46, chrome: {chromedriverVersion: 145.0.7632.67 (87da8db4955d..., userDataDir: C:\Users\GAHASSAN\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60206}, goog:processID: 23248, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60206/devtoo..., se:cdpVersion: 145.0.7632.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 320e769e6a1a24835640666a18bfd60e
+Command: [90b06731dfad0b68a7e3f2fb9e63835c, findElement {using=xpath, value=//a[@title='View my customer account']/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.46, chrome: {chromedriverVersion: 145.0.7632.67 (87da8db4955d..., userDataDir: C:\Users\GAHASSAN\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51216}, goog:processID: 26532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51216/devtoo..., se:cdpVersion: 145.0.7632.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 90b06731dfad0b68a7e3f2fb9e63835c
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -251,9 +316,9 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
-at com.utility.BroswerUtility.getVisibilityText(BroswerUtility.java:60)
+at com.utility.BroswerUtility.getVisibilityText(BroswerUtility.java:70)
 at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:16)
-at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:58)
+at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -286,11 +351,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_withExcelDATA__Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:43:25 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-13T23:43:36 IST" duration-ms="10766" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:19:38 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-14T00:19:50 IST" duration-ms="11939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@443118b0]" started-at="2026-02-13T23:43:36 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-13T23:43:39 IST" duration-ms="3450" status="FAIL">
+        <test-method signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@5505ae1a]" started-at="2026-02-14T00:19:50 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-14T00:19:56 IST" duration-ms="5526" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -310,7 +375,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:58)
+at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)

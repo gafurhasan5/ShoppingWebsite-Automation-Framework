@@ -4,13 +4,14 @@ import org.apache.logging.log4j.*;
 
 
 public  class LoggerUtility {
-	private static Logger logger;
+	//private static Logger logger;
 
 	public  LoggerUtility() {
 
 	}
 	public static Logger getLogger(Class<?>clazz)
 	{
+		Logger logger=null;
 		if(logger==null)
 	    {logger=LogManager.getLogger(clazz);}
 		return logger;
