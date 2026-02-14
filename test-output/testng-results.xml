@@ -2,26 +2,26 @@
 <testng-results retried="3" ignored="0" total="9" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-15T01:01:47 IST" name="Default suite" finished-at="2026-02-15T01:03:25 IST" duration-ms="98244">
+  <suite started-at="2026-02-15T02:33:09 IST" name="Default suite" finished-at="2026-02-15T02:35:04 IST" duration-ms="114536">
     <groups>
       <group name="sanity">
-        <method signature="LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
-        <method signature="LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" name="verify_Login_Valid_withCSVDATA__Credentials" class="com.ui.tests.LoginTest"/>
-        <method signature="LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" name="verify_Login_Valid_withExcelDATA__Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" name="verify_Login_Valid_withCSVDATA__Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" name="verify_Login_Valid_withExcelDATA__Credentials" class="com.ui.tests.LoginTest"/>
       </group> <!-- sanity -->
       <group name="e2e">
-        <method signature="LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
-        <method signature="LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" name="verify_Login_Valid_withCSVDATA__Credentials" class="com.ui.tests.LoginTest"/>
-        <method signature="LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" name="verify_Login_Valid_withExcelDATA__Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" name="verify_Login_Valid_withCSVDATA__Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" name="verify_Login_Valid_withExcelDATA__Credentials" class="com.ui.tests.LoginTest"/>
       </group> <!-- e2e -->
     </groups>
-    <test started-at="2026-02-15T01:01:47 IST" name="Default test" finished-at="2026-02-15T01:03:25 IST" duration-ms="98244">
+    <test started-at="2026-02-15T02:33:09 IST" name="Default test" finished-at="2026-02-15T02:35:04 IST" duration-ms="114536">
       <class name="com.ui.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:01:47 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T01:01:56 IST" duration-ms="8631" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:33:09 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T02:33:19 IST" duration-ms="9638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:01:56 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-15T01:01:58 IST" duration-ms="2633" status="PASS">
+        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:33:19 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-15T02:33:20 IST" duration-ms="1038" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,11 +32,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:01:58 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T01:02:04 IST" duration-ms="5741" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:33:20 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T02:33:24 IST" duration-ms="3926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:02:04 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-15T01:02:06 IST" duration-ms="1893" status="PASS">
+        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:33:24 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-15T02:33:25 IST" duration-ms="943" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,11 +47,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:02:06 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T01:02:10 IST" duration-ms="4051" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:33:25 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T02:33:28 IST" duration-ms="3376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:02:10 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-15T01:02:14 IST" duration-ms="4493" status="PASS">
+        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:33:28 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-15T02:33:32 IST" duration-ms="3454" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,11 +62,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:02:14 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T01:02:22 IST" duration-ms="7790" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:33:32 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T02:33:36 IST" duration-ms="3701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:02:22 IST" name="verify_Login_Valid_withCSVDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestCSVDataProvider" finished-at="2026-02-15T01:02:24 IST" duration-ms="1965" status="PASS">
+        <test-method signature="verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:33:36 IST" name="verify_Login_Valid_withCSVDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestCSVDataProvider" finished-at="2026-02-15T02:33:44 IST" duration-ms="8693" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,11 +77,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_withCSVDATA__Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:02:24 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T01:02:29 IST" duration-ms="4488" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:33:44 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T02:33:51 IST" duration-ms="6398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:02:29 IST" name="verify_Login_Valid_withCSVDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestCSVDataProvider" finished-at="2026-02-15T01:02:34 IST" duration-ms="4796" status="PASS">
+        <test-method signature="verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:33:51 IST" name="verify_Login_Valid_withCSVDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestCSVDataProvider" finished-at="2026-02-15T02:33:56 IST" duration-ms="5189" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -92,11 +92,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_withCSVDATA__Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:02:36 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T01:02:45 IST" duration-ms="9161" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:33:58 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T02:34:05 IST" duration-ms="6968" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:02:45 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-15T01:02:47 IST" duration-ms="2125" status="SKIP">
+        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:34:05 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-15T02:34:10 IST" duration-ms="5240" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -116,7 +116,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
+at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:51)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -149,11 +149,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_withExcelDATA__Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:02:47 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T01:02:55 IST" duration-ms="8082" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:34:10 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T02:34:20 IST" duration-ms="9923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:02:55 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-15T01:02:58 IST" duration-ms="3073" status="SKIP">
+        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:34:20 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-15T02:34:22 IST" duration-ms="2016" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -173,7 +173,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
+at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:51)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -206,11 +206,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_withExcelDATA__Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:02:58 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T01:03:07 IST" duration-ms="9489" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:34:22 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T02:34:30 IST" duration-ms="8324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:03:07 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-15T01:03:12 IST" duration-ms="4217" status="SKIP">
+        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:34:30 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-15T02:34:33 IST" duration-ms="3246" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -230,7 +230,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
+at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:51)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -263,11 +263,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_withExcelDATA__Credentials -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:03:12 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T01:03:18 IST" duration-ms="6776" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:34:33 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-15T02:34:55 IST" duration-ms="21894" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@632ceb35]" started-at="2026-02-15T01:03:18 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-15T01:03:25 IST" duration-ms="6370" status="FAIL">
+        <test-method signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@1800a575]" started-at="2026-02-15T02:34:55 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-15T02:35:03 IST" duration-ms="8220" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -287,7 +287,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
+at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:51)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)

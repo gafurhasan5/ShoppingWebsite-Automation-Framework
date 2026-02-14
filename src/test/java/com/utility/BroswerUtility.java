@@ -2,6 +2,8 @@ package com.utility;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
@@ -80,9 +82,12 @@ public abstract class BroswerUtility {
 	}
 
 	public String takeScreenShot(String name) {
-		TakesScreenshot screenShot = (TakesScreenshot) driver;
+		TakesScreenshot screenShot = (TakesScreenshot) driver.get();
 		File scData = screenShot.getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir") + "//screenshots//" + name;
+		Date date=new Date();
+		SimpleDateFormat formate=new SimpleDateFormat("HH-mm-ss");
+		String timeStamp=formate.format(date);
+		String path = System.getProperty("user.dir") + "//screenshots//" + name+"-"+timeStamp+".png";
 		File scFileDest = new File(path);
 		try {
 			FileUtils.copyFile(scData, scFileDest);

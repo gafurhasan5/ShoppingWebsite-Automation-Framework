@@ -1,27 +1,17 @@
 package com.ui.tests;
 
-import static com.constants.Browser.CHROME;
 import static org.testng.Assert.assertEquals;
 
-import org.apache.logging.log4j.Logger;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.ui.pages.HomePage;
 import com.ui.pojo.User;
-import com.utility.LoggerUtility;
 
 @Listeners(com.ui.listeners.TestListener.class)
 
-public class LoginTest {
-	HomePage homepage;
-	Logger logger = LoggerUtility.getLogger(this.getClass());
-	@BeforeMethod(description = "load the HomePage of website")
-	public void setup() {
-		logger.info("load the HomePage of website");
-		homepage = new HomePage(CHROME);
-	}
+public class LoginTest extends TestBase {
+	
+	
 
 	@Test(description = "verifies with valid user is able to login into the application", groups = { "e2e",
 			"sanity" }, dataProviderClass = com.ui.dataProviders.LoginDataProvider.class, dataProvider = "LoginTestDataProvider")

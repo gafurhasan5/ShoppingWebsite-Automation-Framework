@@ -11,6 +11,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.ui.tests.TestBase;
+import com.utility.BroswerUtility;
 import com.utility.ExtentReporterUtility;
 import com.utility.LoggerUtility;
 
@@ -37,6 +39,13 @@ public class TestListener implements ITestListener {
 		logger.error(result.getThrowable());
 		ExtentReporterUtility.getTest().log(Status.FAIL, result.getMethod().getMethodName() + " " + "FAILED");
 		ExtentReporterUtility.getTest().log(Status.FAIL,result.getThrowable());
+		//for access the screenshot no relationship b/w listener and BrowserUtility class
+		Object testclass=result.getInstance(); //get reference of TestBase class 
+		BroswerUtility browserUtility =((TestBase)testclass).getInstance();//get reference of BrowserUtility class 
+		logger.info("Capturing Screenshot for failed testCase");
+		String screenshotPath=browserUtility.takeScreenShot(result.getMethod().getMethodName());
+		logger.info("Attaching the Screenshot to the HTML file");
+		ExtentReporterUtility.getTest().addScreenCaptureFromPath(screenshotPath);
 		
 	}
 
