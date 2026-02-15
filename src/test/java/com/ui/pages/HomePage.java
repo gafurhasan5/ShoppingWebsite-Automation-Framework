@@ -4,6 +4,7 @@ import static com.constants.Env.QA;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 import com.constants.Browser;
 import com.utility.BroswerUtility;
@@ -15,19 +16,28 @@ public final class HomePage extends BroswerUtility {
 	private static final By SIGN_IN_LINK_LOCATOR = By.linkText("Sign in");
 	Logger logger = LoggerUtility.getLogger(this.getClass());
 	
-	public HomePage(Browser browser) 
+	public HomePage(Browser browser,boolean isHeadless) 
 	{
-		super(browser);//to call the parent class constructor from child class constructor
+		super(browser,isHeadless);//to call the parent class constructor from child class constructor
 		//goToWebSite("https://automationpractice.techwithjatin.com/");
 		//goToWebSite(readProperty(QA,"URL")); //for properties file
 		goToWebSite(JSONUtility.readJSON(QA)); //for JSON file
 		
+	}
+	public HomePage(WebDriver driver)
+	{
+		super(driver);
+		goToWebSite(JSONUtility.readJSON(QA));
 	}
 	public LoginPage goToLoginPage()
 	{
 		logger.info("Trying to performimg click to go to Sign in Page");
 		clickOn(SIGN_IN_LINK_LOCATOR);
 		return new LoginPage(getDriver());
+	}
+	
+	public void quitBrowser() {
+		getDriver().quit();
 	}
 
 }

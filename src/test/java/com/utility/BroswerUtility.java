@@ -13,8 +13,11 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import com.constants.Browser;
 
@@ -29,19 +32,43 @@ public abstract class BroswerUtility {
 
 	public BroswerUtility(WebDriver driver) {
 		super();
-		this.driver.set(driver);// create instance of driver variable
+		this.driver.set(driver);
+		// create instance of driver variable
 	}
 
-	public BroswerUtility(Browser browserName) {
+	public BroswerUtility(Browser browserName, boolean isHeadless) {
 		logger.info("Launching Browser for " + browserName);
 		if (browserName == Browser.CHROME) {
-			driver.set(new ChromeDriver());
+			if (isHeadless) {
+				ChromeOptions options = new ChromeOptions();
+				 options.addArguments("--headless=new");
+		            options.addArguments("--window-size=1920,1080");
+				driver.set(new ChromeDriver(options));
+			} else {
+				driver.set(new ChromeDriver());
+			}
 		} else if (browserName == Browser.EDGE) {
 
-			driver.set(new EdgeDriver());
+			if (isHeadless) {
+				EdgeOptions options = new EdgeOptions();
+				options.addArguments("--headless=new");// headless
+				options.addArguments("disable-gpu");
+				driver.set(new EdgeDriver(options));
+				;
+			} else {
+				driver.set(new EdgeDriver());
+			}
+
 		} else if (browserName == Browser.FIREFOX) {
 
-			driver.set(new FirefoxDriver());
+			if (isHeadless) {
+				FirefoxOptions options = new FirefoxOptions();
+				options.addArguments("--headless=old");// headless
+				options.addArguments("disable-gpu");
+				driver.set(new FirefoxDriver(options));
+			} else {
+				driver.set(new FirefoxDriver());
+			}
 
 		} else {
 			logger.error("Invalid Browser Name....Please select correct Browser");
@@ -68,7 +95,7 @@ public abstract class BroswerUtility {
 
 	public void enterText(By locator, String email) {
 		logger.info("Finding Elements with locator" + locator);
-		WebElement element =driver.get().findElement(locator);
+		WebElement element = driver.get().findElement(locator);
 		logger.info("Elements Found and Now Enter Text");
 		element.sendKeys(email);
 	}
@@ -84,10 +111,10 @@ public abstract class BroswerUtility {
 	public String takeScreenShot(String name) {
 		TakesScreenshot screenShot = (TakesScreenshot) driver.get();
 		File scData = screenShot.getScreenshotAs(OutputType.FILE);
-		Date date=new Date();
-		SimpleDateFormat formate=new SimpleDateFormat("HH-mm-ss");
-		String timeStamp=formate.format(date);
-		String path = System.getProperty("user.dir") + "//screenshots//" + name+"-"+timeStamp+".png";
+		Date date = new Date();
+		SimpleDateFormat formate = new SimpleDateFormat("HH-mm-ss");
+		String timeStamp = formate.format(date);
+		String path = System.getProperty("user.dir") + "//screenshots//" + name + "-" + timeStamp + ".png";
 		File scFileDest = new File(path);
 		try {
 			FileUtils.copyFile(scData, scFileDest);
@@ -97,5 +124,5 @@ public abstract class BroswerUtility {
 		}
 		return path;
 	}
-
+    
 }
