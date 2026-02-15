@@ -24,16 +24,23 @@ public class TestBase {
 //	}
 	// forLamdaTest
 	private boolean isLamdaTest = true;
-     private boolean isHeadless=true;
+	private boolean isHeadless = true;
+
 	@BeforeMethod(description = "load the HomePage of website")
 	public void setup(ITestResult result) {
-		WebDriver lamdaDriver = null;
+
+		WebDriver lamdaDriver;
+
 		if (isLamdaTest) {
-			LamdaTestUtility.initializeLamdaTestSession("chrome", result.getMethod().getMethodName());
+
+			lamdaDriver = LamdaTestUtility.initializeLamdaTestSession("chrome", result.getMethod().getMethodName());
+
 			homepage = new HomePage(lamdaDriver);
+
 		} else {
+
 			logger.info("load the HomePage of website");
-			homepage = new HomePage(CHROME, isHeadless);// true for isHeadless browser
+			homepage = new HomePage(CHROME, isHeadless);
 		}
 	}
 
@@ -45,9 +52,9 @@ public class TestBase {
 	@AfterMethod(description = "Tear Down the browser")
 	public void tearDown() {
 		if (isLamdaTest) {
-			LamdaTestUtility.quitSession();//quit or close the browserSession on LamdaTest
+			LamdaTestUtility.quitSession();// quit or close the browserSession on LamdaTest
 		} else {
-			homepage.quitBrowser(); //local
+			homepage.quitBrowser(); // local
 		}
 	}
 }

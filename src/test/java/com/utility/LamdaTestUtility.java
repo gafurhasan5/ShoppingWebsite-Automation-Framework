@@ -31,7 +31,7 @@ public class LamdaTestUtility {
 	        capabilitiesLocal.set(capabilities);
 	        WebDriver driver=null;
 			try {
-				driver = new RemoteWebDriver(new URL(HUB_URL), capabilitiesLocal.get());
+				driver = new RemoteWebDriver(new URL(HUB_URL),capabilitiesLocal.get());
 			} catch (MalformedURLException e) {
 				
 				e.printStackTrace();
