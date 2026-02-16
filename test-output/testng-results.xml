@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="0" total="9" passed="5" failed="1" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-16T12:27:55 IST" name="Automation Practice Test Suit" finished-at="2026-02-16T12:28:30 IST" duration-ms="35338">
+  <suite started-at="2026-02-16T12:44:03 IST" name="Default suite" finished-at="2026-02-16T12:44:19 IST" duration-ms="15321">
     <groups>
       <group name="sanity">
-        <method signature="LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
-        <method signature="LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" name="verify_Login_Valid_withCSVDATA__Credentials" class="com.ui.tests.LoginTest"/>
-        <method signature="LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" name="verify_Login_Valid_withExcelDATA__Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@c9d0d6]" name="verify_Login_Valid_withCSVDATA__Credentials" class="com.ui.tests.LoginTest"/>
       </group> <!-- sanity -->
       <group name="e2e">
-        <method signature="LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
-        <method signature="LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" name="verify_Login_Valid_withCSVDATA__Credentials" class="com.ui.tests.LoginTest"/>
-        <method signature="LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" name="verify_Login_Valid_withExcelDATA__Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@c9d0d6]" name="verify_Login_Valid_withCSVDATA__Credentials" class="com.ui.tests.LoginTest"/>
       </group> <!-- e2e -->
     </groups>
-    <test started-at="2026-02-16T12:27:55 IST" name="UI Automation Test" finished-at="2026-02-16T12:28:30 IST" duration-ms="35338">
+    <test started-at="2026-02-16T12:44:03 IST" name="Default test" finished-at="2026-02-16T12:44:19 IST" duration-ms="15321">
       <class name="com.ui.tests.LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:27:55 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-16T12:28:07 IST" duration-ms="11539" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@c9d0d6]" started-at="2026-02-16T12:44:04 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-16T12:44:08 IST" duration-ms="4780" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
             <param index="1">
@@ -36,139 +32,14 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@c9d0d6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:27:55 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-16T12:28:08 IST" duration-ms="12977" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:27:56 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-16T12:28:03 IST" duration-ms="6931" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:03 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-16T12:28:05 IST" duration-ms="2346" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User [emailAddress=angelatucker13287@suffermail.com, password=password]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Angel John1] but found [Angel John]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Angel John1] but found [Angel John]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Login_Valid_withExcelDATA__Credentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:05 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-16T12:28:06 IST" duration-ms="386" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:06 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-16T12:28:10 IST" duration-ms="4382" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:07 IST" name="verify_Login_Valid_withCSVDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestCSVDataProvider" finished-at="2026-02-16T12:28:10 IST" duration-ms="3297" status="PASS">
+        <test-method signature="verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@c9d0d6]" started-at="2026-02-16T12:44:08 IST" name="verify_Login_Valid_withCSVDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestCSVDataProvider" finished-at="2026-02-16T12:44:10 IST" duration-ms="1265" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -179,69 +50,15 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_withCSVDATA__Credentials -->
-        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:08 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-16T12:28:11 IST" duration-ms="2796" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User [emailAddress=rehankhan56390@gmail.com, password=12345]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Login_Valid_Credentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:10 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-16T12:28:11 IST" duration-ms="553" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@c9d0d6]" started-at="2026-02-16T12:44:10 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-16T12:44:10 IST" duration-ms="359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:10 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-16T12:28:12 IST" duration-ms="1664" status="SKIP">
+        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@c9d0d6]" started-at="2026-02-16T12:44:10 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-16T12:44:17 IST" duration-ms="7017" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[User [emailAddress=angelatucker13287@suffermail.com, password=password]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Angel John1] but found [Angel John]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Angel John1] but found [Angel John]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Login_Valid_withExcelDATA__Credentials -->
-        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:11 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-16T12:28:18 IST" duration-ms="7113" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
             <param index="1">
@@ -256,85 +73,14 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
             </param>
             <param index="3">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@c9d0d6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:11 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-16T12:28:12 IST" duration-ms="564" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:12 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-16T12:28:16 IST" duration-ms="4153" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:12 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-16T12:28:12 IST" duration-ms="611" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:12 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-16T12:28:19 IST" duration-ms="6169" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:16 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-16T12:28:20 IST" duration-ms="3916" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User [emailAddress=rehankhan56390@gmail.com, password=12345]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Login_Valid_Credentials -->
-        <test-method signature="verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:18 IST" name="verify_Login_Valid_withCSVDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestCSVDataProvider" finished-at="2026-02-16T12:28:20 IST" duration-ms="1837" status="PASS">
+        <test-method signature="verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@c9d0d6]" started-at="2026-02-16T12:44:17 IST" name="verify_Login_Valid_withCSVDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestCSVDataProvider" finished-at="2026-02-16T12:44:18 IST" duration-ms="1315" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -345,199 +91,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Login_Valid_withCSVDATA__Credentials -->
-        <test-method retried="true" signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:19 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-16T12:28:20 IST" duration-ms="1470" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User [emailAddress=angelatucker13287@suffermail.com, password=password]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='View my customer account']/span"}
-  (Session info: chrome=145.0.7632.46)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1215db637249c2ae11af7feb84be5a64, findElement {using=xpath, value=//a[@title='View my customer account']/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.46, chrome: {chromedriverVersion: 145.0.7632.76 (ee36f024f43a..., userDataDir: C:\Users\GAHASSAN\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59431}, goog:processID: 16752, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59431/devtoo..., se:cdpVersion: 145.0.7632.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1215db637249c2ae11af7feb84be5a64]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='View my customer account']/span"}
-  (Session info: chrome=145.0.7632.46)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1215db637249c2ae11af7feb84be5a64, findElement {using=xpath, value=//a[@title='View my customer account']/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.46, chrome: {chromedriverVersion: 145.0.7632.76 (ee36f024f43a..., userDataDir: C:\Users\GAHASSAN\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59431}, goog:processID: 16752, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59431/devtoo..., se:cdpVersion: 145.0.7632.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1215db637249c2ae11af7feb84be5a64
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
-at com.utility.BroswerUtility.getVisibilityText(BroswerUtility.java:105)
-at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:16)
-at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Login_Valid_withExcelDATA__Credentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:20 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-16T12:28:20 IST" duration-ms="864" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:20 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-16T12:28:20 IST" duration-ms="769" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:20 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-16T12:28:21 IST" duration-ms="692" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:20 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-16T12:28:27 IST" duration-ms="6758" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:21 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-16T12:28:28 IST" duration-ms="7088" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:27 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-16T12:28:29 IST" duration-ms="2033" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User [emailAddress=rehankhan56390@gmail.com, password=12345]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Login_Valid_Credentials -->
-        <test-method signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:28 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-16T12:28:30 IST" duration-ms="1657" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User [emailAddress=angelatucker13287@suffermail.com, password=password]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Angel John1] but found [Angel John]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Angel John1] but found [Angel John]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Login_Valid_withExcelDATA__Credentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:29 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-16T12:28:30 IST" duration-ms="764" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@2fd953a6]" started-at="2026-02-16T12:28:30 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-16T12:28:30 IST" duration-ms="457" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@c9d0d6]" started-at="2026-02-16T12:44:18 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-16T12:44:19 IST" duration-ms="334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ui.tests.LoginTest -->
-    </test> <!-- UI Automation Test -->
-  </suite> <!-- Automation Practice Test Suit -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

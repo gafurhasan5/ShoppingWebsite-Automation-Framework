@@ -1,12 +1,11 @@
 package com.ui.tests;
 
-import static com.constants.Browser.CHROME;
-
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.constants.Browser;
@@ -30,7 +29,10 @@ public class TestBase {
     
 	@Parameters({"browser","isLamdaTest","isHeadless"})
 	@BeforeMethod(description = "load the HomePage of website")
-	public void setup(String browser,boolean isLamdaTest,boolean isHeadless ,ITestResult result) {
+	public void setup(
+			@Optional("Chrome")String browser,   //@Optional use the run the one particular class test without run testing.xml file(all test run)
+			@Optional("false")boolean isLamdaTest,
+			@Optional("false")boolean isHeadless ,ITestResult result) {
 
 		WebDriver lamdaDriver;
 
