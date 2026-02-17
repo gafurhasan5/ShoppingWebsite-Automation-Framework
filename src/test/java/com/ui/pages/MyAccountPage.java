@@ -8,12 +8,21 @@ import com.utility.BroswerUtility;
 public final  class MyAccountPage extends BroswerUtility {
 	
 	private static final By USER_NAME_LOCATOR=By.xpath("//a[@title='View my customer account']/span");
+	private static final By SEARCH_BOX_TEXT_LOCATOR=By.id("search_query_top");
+	private static final By SEARCH_BUTTON_TEXT_LOCATOR=By.name("submit_search");
 	public MyAccountPage(WebDriver driver) {
 		super(driver);
 	}
 	public String getUserName()
 	{
-		return getVisibilityText(USER_NAME_LOCATOR);
+		return getVisibilityText1(USER_NAME_LOCATOR);
 	}
-
+	public SearchPage searchForAProduct(String productName)
+	{
+		enterText(SEARCH_BOX_TEXT_LOCATOR,productName);
+		clickOn(SEARCH_BUTTON_TEXT_LOCATOR);
+		return new  SearchPage(getDriver());
+	}
+	
+	
 }
