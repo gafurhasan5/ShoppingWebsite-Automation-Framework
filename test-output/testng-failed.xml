@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ui.tests.LoginTest">
+      <class name="com.ui.tests.ProductSearchTest">
         <methods>
+          <include name="verifyProductSearchTest" invocation-numbers="0"/>
           <include name="setup"/>
-          <include name="verify_Login_Valid_withExcelDATA__Credentials" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.ui.tests.LoginTest -->
+      </class> <!-- com.ui.tests.ProductSearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -3,7 +3,9 @@ package com.utility;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
@@ -73,14 +75,35 @@ public abstract class BroswerUtility {
 		element.sendKeys(email);
 	}
 
-	public String getVisibilityText(By locator) {
-		logger.info("Finding Elements with locator" + locator);
+	public String getVisibilityText1(By locator) {
+		logger.info("Finding Elements with locator:" + locator);
 		WebElement element = driver.get().findElement(locator);
-		logger.info("Elements Found and Now returning the visible" + element.getText());
+		logger.info("Elements Found and Now returning the visible:" +locator);
 		return element.getText();
 
 	}
+	public String getVisibilityText(WebElement element) {
+		logger.info("Finding Elements with locator:" + element);
+		//logger.info("Elements Found and Now returning the visible:" + element.getText());
+		return element.getText();
 
+	}
+	public List<String> getAllVisibilityText(By locator) {
+		logger.info("Finding Elements with locator:" + locator);  
+		List<WebElement> elementList = driver.get().findElements(locator);
+		logger.info("Elements Found and Now printed the List:");
+		List<String>listName=new ArrayList<String>();
+		int numberOfDress=1;
+		for(WebElement element:elementList)
+		{
+			System.out.println("Name of Product is: "+numberOfDress+": "+getVisibilityText(element));
+			listName.add(getVisibilityText(element));
+			numberOfDress++;
+		}
+		return listName;
+
+	}
+	
 	public String takeScreenShot(String name) {
 		TakesScreenshot screenShot = (TakesScreenshot) driver.get();
 		File scData = screenShot.getScreenshotAs(OutputType.FILE);
