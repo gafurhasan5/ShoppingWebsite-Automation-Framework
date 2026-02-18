@@ -1,38 +1,40 @@
-2026-02-48 14:02:59[main]INFO com.ui.listeners.TestListener Test Suit Started 
-2026-02-48 14:03:00[main]INFO com.ui.tests.ProductSearchTest load the HomePage of website 
-2026-02-48 14:03:00[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
-2026-02-48 14:03:03[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
-2026-02-48 14:03:04[main]INFO com.ui.listeners.TestListener verifyProductSearchTest 
-2026-02-48 14:03:04[main]INFO com.ui.listeners.TestListener verifies if the logged in user able to to search product and correct product  are displayed 
-2026-02-48 14:03:04[main]INFO com.ui.listeners.TestListener [smoke, e2e, sanity] 
-2026-02-48 14:03:04[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
-2026-02-48 14:03:04[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
-2026-02-48 14:03:04[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
-2026-02-48 14:03:05[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
-2026-02-48 14:03:05[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-48 14:03:05[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
-2026-02-48 14:03:05[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-48 14:03:05[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
-2026-02-48 14:03:05[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
-2026-02-48 14:03:05[main]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.id: search_query_top 
-2026-02-48 14:03:05[main]INFO com.ui.pages.MyAccountPage Elements Found and Now Enter Text 
-2026-02-48 14:03:05[main]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.name: submit_search 
-2026-02-48 14:03:05[main]INFO com.ui.pages.MyAccountPage Elements Found and Now Performing click 
-2026-02-48 14:03:05[main]INFO com.ui.pages.SearchPage Finding Elements with locator:By.xpath: //h5[@itemprop='name']/a 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Elements Found and Now printed the List: 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a647be097e761e8041f384c7635da67c)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a647be097e761e8041f384c7635da67c)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a647be097e761e8041f384c7635da67c)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a647be097e761e8041f384c7635da67c)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a647be097e761e8041f384c7635da67c)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a647be097e761e8041f384c7635da67c)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a647be097e761e8041f384c7635da67c)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a647be097e761e8041f384c7635da67c)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a647be097e761e8041f384c7635da67c)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a647be097e761e8041f384c7635da67c)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a647be097e761e8041f384c7635da67c)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a647be097e761e8041f384c7635da67c)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a647be097e761e8041f384c7635da67c)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-48 14:03:06[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a647be097e761e8041f384c7635da67c)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-48 14:03:06[main]INFO com.ui.listeners.TestListener verifyProductSearchTest PASSED 
-2026-02-48 14:03:06[main]INFO com.ui.listeners.TestListener Test Suit Started 
+2026-02-49 14:03:54[main]INFO com.ui.tests.AddNewFirstTimeAddressTest load the HomePage of website 
+2026-02-49 14:03:54[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
+2026-02-49 14:03:57[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-49 14:04:01[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-49 14:04:01[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-49 14:04:01[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-49 14:04:01[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-49 14:04:01[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-49 14:04:01[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-49 14:04:01[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-49 14:04:01[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-49 14:04:01[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-49 14:04:01[main]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.xpath: //a[contains(@title,'Add my first address')] 
+2026-02-49 14:04:02[main]INFO com.ui.pages.MyAccountPage Elements Found and Now Performing click 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: company 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: address1 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: address2 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: postcode 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: city 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: phone 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: phone_mobile 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: other 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-49 14:04:02[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: alias 
+2026-02-49 14:04:03[main]INFO com.ui.pages.AddressPage clear the Text field 
+2026-02-49 14:04:03[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: alias 
+2026-02-49 14:04:03[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-49 14:04:03[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: id_state 
+2026-02-49 14:04:03[main]INFO com.ui.pages.AddressPage Selecting the Option:  
+2026-02-49 14:04:03[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: submitAddress 
+2026-02-49 14:04:03[main]INFO com.ui.pages.AddressPage Elements Found and Now Performing click 
+2026-02-49 14:04:03[main]INFO com.ui.pages.AddressPage Finding Elements with locator:By.xpath: //h3[contains(text(),'Home Adresss')] 
+2026-02-49 14:04:03[main]INFO com.ui.pages.AddressPage Elements Found and Now returning the visible:By.xpath: //h3[contains(text(),'Home Adresss')] 

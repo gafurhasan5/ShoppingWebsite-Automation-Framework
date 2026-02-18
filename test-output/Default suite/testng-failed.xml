@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ui.tests.ProductSearchTest">
+      <class name="com.ui.tests.AddNewFirstTimeAddressTest">
         <methods>
-          <include name="verifyProductSearchTest" invocation-numbers="0"/>
+          <include name="Test" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.ui.tests.ProductSearchTest -->
+      </class> <!-- com.ui.tests.AddNewFirstTimeAddressTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

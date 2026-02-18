@@ -10,8 +10,6 @@ import com.ui.pojo.User;
 @Listeners(com.ui.listeners.TestListener.class)
 
 public class LoginTest extends TestBase {
-	
-	
 
 	@Test(description = "verifies with valid user is able to login into the application", groups = { "e2e",
 			"sanity" }, dataProviderClass = com.ui.dataProviders.LoginDataProvider.class, dataProvider = "LoginTestDataProvider")

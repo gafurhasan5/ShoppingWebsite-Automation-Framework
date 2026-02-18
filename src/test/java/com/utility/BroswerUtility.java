@@ -3,6 +3,7 @@ package com.utility;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -17,6 +18,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.constants.Browser;
 
@@ -74,7 +78,13 @@ public abstract class BroswerUtility {
 		logger.info("Elements Found and Now Enter Text");
 		element.sendKeys(email);
 	}
-
+	public void clearText(By clearTextlocator) {
+		logger.info("Finding Elements with locator" +  clearTextlocator);
+		WebElement element =driver.get().findElement( clearTextlocator);
+		logger.info("clear the Text field");
+		element.clear();
+		
+	}
 	public String getVisibilityText1(By locator) {
 		logger.info("Finding Elements with locator:" + locator);
 		WebElement element = driver.get().findElement(locator);
@@ -103,6 +113,22 @@ public abstract class BroswerUtility {
 		return listName;
 
 	}
+//	public void selectDropDown(By locator) {
+//		logger.info("Finding Elements with locator" + locator);
+//		WebElement countryDropdown = driver.get().findElement(locator);
+//		logger.info("Elements Found and Now Performing click");
+//		countryDropdown.click();
+//	}
+	public void selectFromDropDown(By dropdownlocator) {
+		   //WebDriverWait wait = new WebDriverWait(driver.get(), Duration.ofSeconds(10));
+		   //WebElement dropdown = wait.until(
+		          // ExpectedConditions.visibilityOfElementLocated(dropdownlocator));
+		logger.info("Finding Elements with locator" + dropdownlocator);
+		WebElement element=driver.get().findElement(dropdownlocator);
+		  Select select=new Select( element);
+		  logger.info("Selecting the Option: "); 
+		  select.selectByIndex(4);
+		}
 	
 	public String takeScreenShot(String name) {
 		TakesScreenshot screenShot = (TakesScreenshot) driver.get();

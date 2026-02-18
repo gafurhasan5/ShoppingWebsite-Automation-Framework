@@ -2,25 +2,25 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-17T14:02:59 IST" name="Default suite" finished-at="2026-02-17T14:03:06 IST" duration-ms="6491">
+  <suite started-at="2026-02-18T14:03:53 IST" name="Default suite" finished-at="2026-02-18T14:04:03 IST" duration-ms="10187">
     <groups>
       <group name="smoke">
-        <method signature="ProductSearchTest.verifyProductSearchTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.ProductSearchTest@5ddf0d24]" name="verifyProductSearchTest" class="com.ui.tests.ProductSearchTest"/>
+        <method signature="AddNewFirstTimeAddressTest.Test(com.ui.pojo.User)[pri:0, instance:com.ui.tests.AddNewFirstTimeAddressTest@a4add54]" name="Test" class="com.ui.tests.AddNewFirstTimeAddressTest"/>
       </group> <!-- smoke -->
       <group name="sanity">
-        <method signature="ProductSearchTest.verifyProductSearchTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.ProductSearchTest@5ddf0d24]" name="verifyProductSearchTest" class="com.ui.tests.ProductSearchTest"/>
+        <method signature="AddNewFirstTimeAddressTest.Test(com.ui.pojo.User)[pri:0, instance:com.ui.tests.AddNewFirstTimeAddressTest@a4add54]" name="Test" class="com.ui.tests.AddNewFirstTimeAddressTest"/>
       </group> <!-- sanity -->
       <group name="e2e">
-        <method signature="ProductSearchTest.verifyProductSearchTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.ProductSearchTest@5ddf0d24]" name="verifyProductSearchTest" class="com.ui.tests.ProductSearchTest"/>
+        <method signature="AddNewFirstTimeAddressTest.Test(com.ui.pojo.User)[pri:0, instance:com.ui.tests.AddNewFirstTimeAddressTest@a4add54]" name="Test" class="com.ui.tests.AddNewFirstTimeAddressTest"/>
       </group> <!-- e2e -->
     </groups>
-    <test started-at="2026-02-17T14:02:59 IST" name="Default test" finished-at="2026-02-17T14:03:06 IST" duration-ms="6491">
-      <class name="com.ui.tests.ProductSearchTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.ProductSearchTest@5ddf0d24]" started-at="2026-02-17T14:03:00 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-17T14:03:04 IST" duration-ms="3951" status="PASS">
+    <test started-at="2026-02-18T14:03:53 IST" name="Default test" finished-at="2026-02-18T14:04:03 IST" duration-ms="10187">
+      <class name="com.ui.tests.AddNewFirstTimeAddressTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.AddNewFirstTimeAddressTest@a4add54]" started-at="2026-02-18T14:03:54 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-18T14:03:59 IST" duration-ms="5108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyProductSearchTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.ProductSearchTest@5ddf0d24]" started-at="2026-02-17T14:03:04 IST" name="verifyProductSearchTest" description="verifies if the logged in user able to to search product and correct product  are displayed" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-17T14:03:06 IST" duration-ms="1623" status="PASS">
+        <test-method signature="Test(com.ui.pojo.User)[pri:0, instance:com.ui.tests.AddNewFirstTimeAddressTest@a4add54]" started-at="2026-02-18T14:03:59 IST" name="Test" description="verifies add address save" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-18T14:04:03 IST" duration-ms="4383" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,8 +30,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductSearchTest -->
-      </class> <!-- com.ui.tests.ProductSearchTest -->
+        </test-method> <!-- Test -->
+      </class> <!-- com.ui.tests.AddNewFirstTimeAddressTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
