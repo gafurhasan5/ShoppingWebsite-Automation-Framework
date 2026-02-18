@@ -3,6 +3,7 @@ package com.ui.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.ui.pojo.AddressPOJO;
 import com.utility.BroswerUtility;
 
 public class AddressPage extends BroswerUtility {
@@ -25,19 +26,19 @@ public class AddressPage extends BroswerUtility {
 		super(driver);
 	}
 
-	public void saveAddess() {
-		enterText(COMPANY_TEXTBOX_LOACTOR, "CG");
-		enterText(ADDRESS1_TEXTBOX_LOACTOR, "AURAI");
-		enterText(ADDRESS2_TEXTBOX_LOACTOR, "BHADHOHI");
-		enterText(POSTCODE_TEXTBOX_LOACTOR, "983983");
-		enterText(CITY_TEXTBOX_LOACTOR, "PUNE");
+	public void saveAddess(AddressPOJO address) {
+		enterText(COMPANY_TEXTBOX_LOACTOR, address.getCompanyName());
+		enterText(ADDRESS1_TEXTBOX_LOACTOR, address.getAddress1());
+		enterText(ADDRESS2_TEXTBOX_LOACTOR, address.getAddress2());
+		enterText(POSTCODE_TEXTBOX_LOACTOR, address.getPostCode());
+		enterText(CITY_TEXTBOX_LOACTOR, address.getCity());
 		// selectFromDropDown(COUNTRY_TEXTBOX_LOACTOR,"India");
-		enterText(HOME_PHONE_TEXTBOX_LOACTOR, "8738826601");
-		enterText(MOBILE_PHONE_TEXTBOX_LOACTOR, "8738826601");
+		enterText(HOME_PHONE_TEXTBOX_LOACTOR, address.getHomePhoneNumber());
+		enterText(MOBILE_PHONE_TEXTBOX_LOACTOR, address.getMobilePhoneNumber());
 
-		enterText(ADDITIONAL_INFORMATION_TEXTAREA_LOACTOR, "Hello gafur");
+		enterText(ADDITIONAL_INFORMATION_TEXTAREA_LOACTOR, address.getOtherInformation());
 		clearText(ASSIGN_ADDRESS1_TEXTBOX_LOACTOR);
-		enterText(ASSIGN_ADDRESS1_TEXTBOX_LOACTOR, "Ghosia Aurai Bhadohi");
+		enterText(ASSIGN_ADDRESS1_TEXTBOX_LOACTOR, address.getAddressAlias());
 
 		selectFromDropDown(STATE_SELECT_LOACTOR);
 		clickOn(SAVE_ADDRESS_LOCATOR);
