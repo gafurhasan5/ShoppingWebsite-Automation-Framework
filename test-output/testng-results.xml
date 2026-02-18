@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-18T13:41:52 IST" name="Default suite" finished-at="2026-02-18T13:42:02 IST" duration-ms="9689">
+  <suite started-at="2026-02-18T14:03:53 IST" name="Default suite" finished-at="2026-02-18T14:04:03 IST" duration-ms="10187">
     <groups>
       <group name="smoke">
         <method signature="AddNewFirstTimeAddressTest.Test(com.ui.pojo.User)[pri:0, instance:com.ui.tests.AddNewFirstTimeAddressTest@a4add54]" name="Test" class="com.ui.tests.AddNewFirstTimeAddressTest"/>
@@ -14,13 +14,13 @@
         <method signature="AddNewFirstTimeAddressTest.Test(com.ui.pojo.User)[pri:0, instance:com.ui.tests.AddNewFirstTimeAddressTest@a4add54]" name="Test" class="com.ui.tests.AddNewFirstTimeAddressTest"/>
       </group> <!-- e2e -->
     </groups>
-    <test started-at="2026-02-18T13:41:52 IST" name="Default test" finished-at="2026-02-18T13:42:02 IST" duration-ms="9689">
+    <test started-at="2026-02-18T14:03:53 IST" name="Default test" finished-at="2026-02-18T14:04:03 IST" duration-ms="10187">
       <class name="com.ui.tests.AddNewFirstTimeAddressTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.AddNewFirstTimeAddressTest@a4add54]" started-at="2026-02-18T13:41:53 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-18T13:41:58 IST" duration-ms="4806" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.AddNewFirstTimeAddressTest@a4add54]" started-at="2026-02-18T14:03:54 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-18T14:03:59 IST" duration-ms="5108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Test(com.ui.pojo.User)[pri:0, instance:com.ui.tests.AddNewFirstTimeAddressTest@a4add54]" started-at="2026-02-18T13:41:58 IST" name="Test" description="verifies add address save" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-18T13:42:02 IST" duration-ms="4134" status="PASS">
+        <test-method signature="Test(com.ui.pojo.User)[pri:0, instance:com.ui.tests.AddNewFirstTimeAddressTest@a4add54]" started-at="2026-02-18T14:03:59 IST" name="Test" description="verifies add address save" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-18T14:04:03 IST" duration-ms="4383" status="PASS">
           <params>
             <param index="0">
               <value>

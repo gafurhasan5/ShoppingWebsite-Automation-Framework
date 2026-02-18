@@ -1,5 +1,6 @@
 package com.ui.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.ui.pojo.AddressPOJO;
@@ -13,8 +14,9 @@ public class AddNewFirstTimeAddressTest extends TestBase {
 	@Test(description = "verifies add address save", groups = { "e2e", "smoke",
 			"sanity" }, dataProviderClass = com.ui.dataProviders.LoginDataProvider.class, dataProvider = "LoginTestExcelDataProvider")
 	public void Test(User user) {
-		// address=new AddressPOJO("CG","AURAI","BHADHOHI", "PUNE", "983983", "8738826601","8738826601", "Hello gafur", "Ghosia Aurai Bhadohi", "Goa");
+		// address=new AddressPOJO("CG","AURAI","BHADHOHI", "PUNE", "983983", "8738826601","8738826601", "Hello gafur", "Home Adresss", "Goa");
 		address=FakerAddressUtility.getFakeAddess();
-		homepage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).goToAddressPage().saveAddess( address);
+		String AddressHeading=homepage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).goToAddressPage().saveAddess( address);
+		Assert.assertEquals(AddressHeading,address.getAddressAlias().toUpperCase());
 	}
 }

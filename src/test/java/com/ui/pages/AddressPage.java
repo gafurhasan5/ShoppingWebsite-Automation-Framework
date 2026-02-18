@@ -21,12 +21,13 @@ public class AddressPage extends BroswerUtility {
 	static final By ADDITIONAL_INFORMATION_TEXTAREA_LOACTOR = By.id("other");
 	static final By ASSIGN_ADDRESS1_TEXTBOX_LOACTOR = By.id("alias");
 	static final By SAVE_ADDRESS_LOCATOR = By.id("submitAddress");
-
+	static final By SAVE_ADDRESS_HEADING = By.xpath("//h3[contains(text(),'Home Adresss')]");
+	
 	public AddressPage(WebDriver driver) {
 		super(driver);
 	}
 
-	public void saveAddess(AddressPOJO address) {
+	public String saveAddess(AddressPOJO address) {
 		enterText(COMPANY_TEXTBOX_LOACTOR, address.getCompanyName());
 		enterText(ADDRESS1_TEXTBOX_LOACTOR, address.getAddress1());
 		enterText(ADDRESS2_TEXTBOX_LOACTOR, address.getAddress2());
@@ -42,7 +43,8 @@ public class AddressPage extends BroswerUtility {
 
 		selectFromDropDown(STATE_SELECT_LOACTOR);
 		clickOn(SAVE_ADDRESS_LOCATOR);
-
+		String newAddressHeading=getVisibilityText1(SAVE_ADDRESS_HEADING);
+		return  newAddressHeading;
 	}
 
 }
