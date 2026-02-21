@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\GAHASSAN\AppData\Local\Temp\testng-eclipse-1789636591\testng-customsuite.xml</span>
+                    <span>C:\Users\GAHASSAN\AppData\Local\Temp\testng-eclipse--942272439\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.ui.tests.AddNewFirstTimeAddressTest" class="method navigator-link" hash-for-method="Test(User [emailAddress=angelatucker13287@suffermail.com, password=password])">Test(User [emailAddress=angelatucker13287@suffermail.com, password=password])</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.ui.tests.ProductDetailTest" class="method navigator-link" hash-for-method="checkoutTest(User [emailAddress=angelatucker13287@suffermail.com, password=password])">checkoutTest(User [emailAddress=angelatucker13287@suffermail.com, password=password])</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,17 +121,17 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.ui.tests.AddNewFirstTimeAddressTest</span>
+              <span class="class-name">com.ui.tests.ProductDetailTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test(User [emailAddress=angelatucker13287@suffermail.com, password=password])">
-                  </a> <!-- Test(User [emailAddress=angelatucker13287@suffermail.com, password=password]) -->
-                  <span class="method-name">Test</span>
+                  <a name="checkoutTest(User [emailAddress=angelatucker13287@suffermail.com, password=password])">
+                  </a> <!-- checkoutTest(User [emailAddress=angelatucker13287@suffermail.com, password=password]) -->
+                  <span class="method-name">checkoutTest</span>
                   <span class="parameters">(User [emailAddress=angelatucker13287@suffermail.com, password=password])</span>
                   <em>
-(verifies add address save)                  </em>
+(verifies if logged in User is able to buy a dress)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -139,7 +139,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\GAHASSAN\AppData\Local\Temp\testng-eclipse-1789636591\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\GAHASSAN\AppData\Local\Temp\testng-eclipse--942272439\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -148,11 +148,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.ui.tests.AddNewFirstTimeAddressTest&quot;&gt;
+      &lt;class name=&quot;com.ui.tests.ProductDetailTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;Test&quot;/&gt;
+          &lt;include name=&quot;checkoutTest&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.ui.tests.AddNewFirstTimeAddressTest --&gt;
+      &lt;/class&gt; &lt;!-- com.ui.tests.ProductDetailTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -180,7 +180,7 @@
               <span class="test-group-name">e2e</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">Test</span>
+                <span class="method-in-group-name">checkoutTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -188,7 +188,7 @@
               <span class="test-group-name">sanity</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">Test</span>
+                <span class="method-in-group-name">checkoutTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -196,7 +196,7 @@
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">Test</span>
+                <span class="method-in-group-name">checkoutTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -218,14 +218,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test')
-data.setCell(0, 2, 'com.ui.tests.AddNewFirstTimeAddressTest')
-data.setCell(0, 3, 4383);
+data.setCell(0, 1, 'checkoutTest')
+data.setCell(0, 2, 'com.ui.tests.ProductDetailTest')
+data.setCell(0, 3, 3362);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -251,14 +251,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.ui.tests.AddNewFirstTimeAddressTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.ui.tests.ProductDetailTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Test(User [emailAddress=angelatucker13287@suffermail.com, password=password])</span>
-                <span class="method-start">5109 ms</span>
+                <span class="method-name">checkoutTest(User [emailAddress=angelatucker13287@suffermail.com, password=password])</span>
+                <span class="method-start">4300 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

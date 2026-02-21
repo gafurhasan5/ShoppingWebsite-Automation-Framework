@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.utility.BroswerUtility;
 
@@ -49,6 +50,12 @@ public class SearchPage extends BroswerUtility {
 		    return result;
 		   /* boolean result=productNameList.stream().anyMatch(name->(Keywords.stream().anyMatch(name.toLowerCase()::contains)));
 		    return result;*/
+	}
+	public ProductDetailPage clickOnTheProductAt(int index) {
+		//ProductDetailPage productcheckoutpage=null;
+		 WebElement element=getAllElements(ALL_PRODUCT__NAME_LOACTOR).get(index);
+		 element.click();
+		 return new ProductDetailPage(getDriver());
 	}
 	
 
