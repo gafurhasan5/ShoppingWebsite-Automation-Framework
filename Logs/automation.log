@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2026-02-53 01:00:53[main]INFO com.ui.tests.ProductDetailTest load the HomePage of website 
 2026-02-53 01:00:53[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
 2026-02-53 01:00:55[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
@@ -28,3 +29,103 @@
 2026-02-53 01:01:00[main]INFO com.ui.pages.ShipmentPage Elements Found and Now Performing click 
 2026-02-53 01:01:00[main]INFO com.ui.pages.ShipmentPage Finding Elements with locatorBy.id: uniform-cgv 
 2026-02-53 01:01:00[main]INFO com.ui.pages.ShipmentPage Elements Found and Now Performing click 
+=======
+2026-02-53 16:22:44[main]INFO com.ui.listeners.TestListener Test Suit Started 
+2026-02-53 16:23:18[TestNG-test-UI Automation Test-2]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-53 16:23:19[TestNG-test-UI Automation Test-2]INFO com.ui.listeners.TestListener verify_Login_Valid_withCSVDATA__Credentials 
+2026-02-53 16:23:19[TestNG-test-UI Automation Test-2]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
+2026-02-53 16:23:19[TestNG-test-UI Automation Test-2]INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-02-53 16:23:19[TestNG-test-UI Automation Test-2]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-53 16:23:19[TestNG-test-UI Automation Test-2]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-53 16:23:19[TestNG-test-UI Automation Test-2]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-53 16:23:20[TestNG-test-UI Automation Test-2]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-53 16:23:20[TestNG-test-UI Automation Test-2]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-53 16:23:20[TestNG-test-UI Automation Test-2]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-53 16:23:20[TestNG-test-UI Automation Test-2]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-53 16:23:21[TestNG-test-UI Automation Test-2]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-53 16:23:21[TestNG-test-UI Automation Test-2]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-53 16:23:21[TestNG-test-UI Automation Test-2]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.xpath: //a[@title='View my customer account']/span 
+2026-02-53 16:23:21[TestNG-test-UI Automation Test-2]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visibleRehan khan 
+2026-02-53 16:23:21[TestNG-test-UI Automation Test-2]INFO com.ui.listeners.TestListener verify_Login_Valid_withCSVDATA__Credentials PASSED 
+2026-02-53 16:23:22[TestNG-test-UI Automation Test-3]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-53 16:23:23[TestNG-test-UI Automation Test-3]INFO com.ui.listeners.TestListener verify_Login_Valid_withExcelDATA__Credentials 
+2026-02-53 16:23:23[TestNG-test-UI Automation Test-3]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
+2026-02-53 16:23:23[TestNG-test-UI Automation Test-3]INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-02-53 16:23:23[TestNG-test-UI Automation Test-3]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-53 16:23:23[TestNG-test-UI Automation Test-3]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-53 16:23:23[TestNG-test-UI Automation Test-3]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-53 16:23:24[TestNG-test-UI Automation Test-3]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-53 16:23:24[TestNG-test-UI Automation Test-3]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-53 16:23:24[TestNG-test-UI Automation Test-3]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-53 16:23:24[TestNG-test-UI Automation Test-3]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-53 16:23:24[TestNG-test-UI Automation Test-3]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-53 16:23:24[TestNG-test-UI Automation Test-3]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-53 16:23:25[TestNG-test-UI Automation Test-3]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.xpath: //a[@title='View my customer account']/span 
+2026-02-53 16:23:25[TestNG-test-UI Automation Test-3]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visibleAngel John 
+2026-02-53 16:23:25[TestNG-test-UI Automation Test-3]INFO com.ui.listeners.TestListener verify_Login_Valid_withExcelDATA__Credentials PASSED 
+2026-02-53 16:23:46[TestNG-test-UI Automation Test-2]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-53 16:23:47[TestNG-test-UI Automation Test-2]INFO com.ui.listeners.TestListener verify_Login_Valid_withCSVDATA__Credentials 
+2026-02-53 16:23:47[TestNG-test-UI Automation Test-2]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
+2026-02-53 16:23:47[TestNG-test-UI Automation Test-2]INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-02-53 16:23:47[TestNG-test-UI Automation Test-2]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-53 16:23:47[TestNG-test-UI Automation Test-2]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-53 16:23:48[TestNG-test-UI Automation Test-2]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-53 16:23:48[TestNG-test-UI Automation Test-2]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-53 16:23:48[TestNG-test-UI Automation Test-2]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-53 16:23:48[TestNG-test-UI Automation Test-2]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-53 16:23:48[TestNG-test-UI Automation Test-2]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-53 16:23:49[TestNG-test-UI Automation Test-2]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-53 16:23:49[TestNG-test-UI Automation Test-2]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-53 16:23:49[TestNG-test-UI Automation Test-2]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.xpath: //a[@title='View my customer account']/span 
+2026-02-53 16:23:49[TestNG-test-UI Automation Test-2]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visibleRehan khan 
+2026-02-53 16:23:49[TestNG-test-UI Automation Test-2]INFO com.ui.listeners.TestListener verify_Login_Valid_withCSVDATA__Credentials PASSED 
+2026-02-53 16:24:00[TestNG-test-UI Automation Test-1]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-53 16:24:00[TestNG-test-UI Automation Test-1]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials 
+2026-02-53 16:24:00[TestNG-test-UI Automation Test-1]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
+2026-02-53 16:24:00[TestNG-test-UI Automation Test-1]INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-02-53 16:24:00[TestNG-test-UI Automation Test-1]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-53 16:24:00[TestNG-test-UI Automation Test-1]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-53 16:24:01[TestNG-test-UI Automation Test-1]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-53 16:24:01[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-53 16:24:01[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-53 16:24:01[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-53 16:24:02[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-53 16:24:02[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-53 16:24:02[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-53 16:24:02[TestNG-test-UI Automation Test-1]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.xpath: //a[@title='View my customer account']/span 
+2026-02-53 16:24:02[TestNG-test-UI Automation Test-1]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visibleRehan khan 
+2026-02-53 16:24:02[TestNG-test-UI Automation Test-1]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials PASSED 
+2026-02-53 16:24:11[TestNG-test-UI Automation Test-1]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-53 16:24:12[TestNG-test-UI Automation Test-1]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials 
+2026-02-53 16:24:12[TestNG-test-UI Automation Test-1]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
+2026-02-53 16:24:12[TestNG-test-UI Automation Test-1]INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-02-53 16:24:12[TestNG-test-UI Automation Test-1]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-53 16:24:12[TestNG-test-UI Automation Test-1]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-53 16:24:12[TestNG-test-UI Automation Test-1]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-53 16:24:13[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-53 16:24:13[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-53 16:24:13[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-53 16:24:13[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-53 16:24:13[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-53 16:24:13[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-53 16:24:14[TestNG-test-UI Automation Test-1]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.xpath: //a[@title='View my customer account']/span 
+2026-02-53 16:24:14[TestNG-test-UI Automation Test-1]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visibleRehan khan 
+2026-02-53 16:24:14[TestNG-test-UI Automation Test-1]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials PASSED 
+2026-02-53 16:24:42[TestNG-test-UI Automation Test-1]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-53 16:24:43[TestNG-test-UI Automation Test-1]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials 
+2026-02-53 16:24:43[TestNG-test-UI Automation Test-1]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
+2026-02-53 16:24:43[TestNG-test-UI Automation Test-1]INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-02-53 16:24:43[TestNG-test-UI Automation Test-1]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-53 16:24:43[TestNG-test-UI Automation Test-1]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-53 16:24:43[TestNG-test-UI Automation Test-1]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-53 16:24:44[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-53 16:24:44[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-53 16:24:44[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-53 16:24:44[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-53 16:24:44[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-53 16:24:45[TestNG-test-UI Automation Test-1]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-53 16:24:45[TestNG-test-UI Automation Test-1]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.xpath: //a[@title='View my customer account']/span 
+2026-02-53 16:24:45[TestNG-test-UI Automation Test-1]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visibleRehan khan 
+2026-02-53 16:24:46[TestNG-test-UI Automation Test-1]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials PASSED 
+2026-02-53 16:24:46[main]INFO com.ui.listeners.TestListener Test Suit Started 
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch

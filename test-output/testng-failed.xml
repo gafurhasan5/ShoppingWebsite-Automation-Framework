@@ -7,6 +7,11 @@
         <methods>
           <include name="checkoutTest" invocation-numbers="0"/>
           <include name="setup"/>
+<<<<<<< HEAD
+=======
+          <include name="verify_Login_Valid_Credentials"/>
+          <include name="tearDown"/>
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
         </methods>
       </class> <!-- com.ui.tests.ProductDetailTest -->
     </classes>

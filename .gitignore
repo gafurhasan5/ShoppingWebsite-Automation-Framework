@@ -1,5 +1,11 @@
 /target/
+<<<<<<< HEAD
 /screenshots/
 /Logs/
 /test-output/
 /testng.xml
+=======
+/test-output/
+/screenshots/
+/Logs/
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch

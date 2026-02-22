@@ -16,11 +16,17 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+<<<<<<< HEAD
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+=======
+import org.openqa.selenium.firefox.FirefoxOptions;
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
 
 import com.constants.Browser;
 import com.constants.Size;
@@ -36,23 +42,64 @@ public abstract class BroswerUtility {
 
 	public BroswerUtility(WebDriver driver) {
 		super();
+<<<<<<< HEAD
 		this.driver.set(driver);// create instance of driver variable
 		wait =new WebDriverWait(driver, Duration.ofSeconds(30L));
+=======
+		this.driver.set(driver);
+		// create instance of driver variable
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
 	}
 
-	public BroswerUtility(Browser browserName) {
+	public BroswerUtility(Browser browserName, boolean isHeadless) {
 		logger.info("Launching Browser for " + browserName);
 		if (browserName == Browser.CHROME) {
+<<<<<<< HEAD
 			driver.set(new ChromeDriver());
 			wait =new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+=======
+			if (isHeadless) {
+				ChromeOptions options = new ChromeOptions();
+				 options.addArguments("--headless=new");
+		            options.addArguments("--window-size=1920,1080");
+				driver.set(new ChromeDriver(options));
+			} else {
+				driver.set(new ChromeDriver());
+			}
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
 		} else if (browserName == Browser.EDGE) {
 
+<<<<<<< HEAD
 			driver.set(new EdgeDriver());
 			wait =new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+=======
+			if (isHeadless) {
+				EdgeOptions options = new EdgeOptions();
+				options.addArguments("--headless=new");// headless
+				options.addArguments("disable-gpu");
+				driver.set(new EdgeDriver(options));
+				;
+			} else {
+				driver.set(new EdgeDriver());
+			}
+
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
 		} else if (browserName == Browser.FIREFOX) {
 
+<<<<<<< HEAD
 			driver.set(new FirefoxDriver());
 			wait =new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+=======
+			if (isHeadless) {
+				FirefoxOptions options = new FirefoxOptions();
+				options.addArguments("--headless=old");// headless
+				options.addArguments("disable-gpu");
+				driver.set(new FirefoxDriver(options));
+			} else {
+				driver.set(new FirefoxDriver());
+			}
+
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
 		} else {
 			logger.error("Invalid Browser Name....Please select correct Browser");
 			System.err.print("Invalid Browser Name....Please select correct Browser");
@@ -87,8 +134,12 @@ public abstract class BroswerUtility {
 	}
 	public void enterText(By locator, String email) {
 		logger.info("Finding Elements with locator" + locator);
+<<<<<<< HEAD
 		//WebElement element =driver.get().findElement(locator);
 		WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+=======
+		WebElement element = driver.get().findElement(locator);
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
 		logger.info("Elements Found and Now Enter Text");
 		element.sendKeys(email);
 	}
@@ -162,10 +213,10 @@ public abstract class BroswerUtility {
 	public String takeScreenShot(String name) {
 		TakesScreenshot screenShot = (TakesScreenshot) driver.get();
 		File scData = screenShot.getScreenshotAs(OutputType.FILE);
-		Date date=new Date();
-		SimpleDateFormat formate=new SimpleDateFormat("HH-mm-ss");
-		String timeStamp=formate.format(date);
-		String path = System.getProperty("user.dir") + "//screenshots//" + name+"-"+timeStamp+".png";
+		Date date = new Date();
+		SimpleDateFormat formate = new SimpleDateFormat("HH-mm-ss");
+		String timeStamp = formate.format(date);
+		String path = System.getProperty("user.dir") + "//screenshots//" + name + "-" + timeStamp + ".png";
 		File scFileDest = new File(path);
 		try {
 			FileUtils.copyFile(scData, scFileDest);
@@ -175,5 +226,5 @@ public abstract class BroswerUtility {
 		}
 		return path;
 	}
-
+    
 }

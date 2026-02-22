@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>UI Automation Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/2/3</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Feb 15 00:53:03 IST 2026</td>
+<td>Started on:</td><td>Sun Feb 22 15:51:37 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>73 seconds (73386 ms)</td>
+<tr><td>Total time:</td><td>14 seconds (14857 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,125 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials()'><b>verify_Login_Valid_withExcelDATA__Credentials</b><br>Test class: com.ui.tests.LoginTest<br>Test method: verifies with valid user is able to login into the application<br>Parameters: User [emailAddress=angelatucker13287@suffermail.com, password=password]</td>
-<td><div><pre>java.lang.AssertionError: expected [Angel John1] but found [Angel John]
-	at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace977645136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace977645136'><pre>java.lang.AssertionError: expected [Angel John1] but found [Angel John]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>4</td>
-<td>com.ui.tests.LoginTest@632ceb35</td></tr>
-<tr>
-<td title='com.ui.tests.LoginTest.verify_Login_Valid_Credentials()'><b>verify_Login_Valid_Credentials</b><br>Test class: com.ui.tests.LoginTest<br>Test method: verifies with valid user is able to login into the application<br>Parameters: User [emailAddress=rehankhan56390@gmail.com, password=12345]</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;View my customer account&apos;]/span&quot;}
-  (Session info: chrome=145.0.7632.46)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bcaea459ea72e3448afb2cd3b4ab4cb2, findElement {using=xpath, value=//a[@title=&apos;View my customer account&apos;]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.46, chrome: {chromedriverVersion: 145.0.7632.76 (ee36f024f43a..., userDataDir: C:\Users\GAHASSAN\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56360}, goog:processID: 26520, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56360/devtoo..., se:cdpVersion: 145.0.7632.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bcaea459ea72e3448afb2cd3b4ab4cb2
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
-	at com.utility.BroswerUtility.getVisibilityText(BroswerUtility.java:70)
-	at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:16)
-	at com.ui.tests.LoginTest.verify_Login_Valid_Credentials(LoginTest.java:43)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace981311971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace981311971'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;View my customer account&apos;]/span&quot;}
-  (Session info: chrome=145.0.7632.46)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bcaea459ea72e3448afb2cd3b4ab4cb2, findElement {using=xpath, value=//a[@title=&apos;View my customer account&apos;]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.46, chrome: {chromedriverVersion: 145.0.7632.76 (ee36f024f43a..., userDataDir: C:\Users\GAHASSAN\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56360}, goog:processID: 26520, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56360/devtoo..., se:cdpVersion: 145.0.7632.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bcaea459ea72e3448afb2cd3b4ab4cb2
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
-	at com.utility.BroswerUtility.getVisibilityText(BroswerUtility.java:70)
-	at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:16)
-	at com.ui.tests.LoginTest.verify_Login_Valid_Credentials(LoginTest.java:43)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>2</td>
-<td>com.ui.tests.LoginTest@632ceb35</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -195,145 +76,35 @@ Session ID: bcaea459ea72e3448afb2cd3b4ab4cb2
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ui.tests.LoginTest.verify_Login_Valid_Credentials()'><b>verify_Login_Valid_Credentials</b><br>Test class: com.ui.tests.LoginTest<br>Test method: verifies with valid user is able to login into the application<br>Parameters: User [emailAddress=rehankhan56390@gmail.com, password=12345]</td>
-<td></td>
-<td>8</td>
-<td>com.ui.tests.LoginTest@632ceb35</td></tr>
-<tr>
-<td title='com.ui.tests.LoginTest.verify_Login_Valid_Credentials()'><b>verify_Login_Valid_Credentials</b><br>Test class: com.ui.tests.LoginTest<br>Test method: verifies with valid user is able to login into the application<br>Parameters: User [emailAddress=rehankhan56390@gmail.com, password=12345]</td>
-<td></td>
-<td>8</td>
-<td>com.ui.tests.LoginTest@632ceb35</td></tr>
-<tr>
 <td title='com.ui.tests.LoginTest.verify_Login_Valid_withCSVDATA__Credentials()'><b>verify_Login_Valid_withCSVDATA__Credentials</b><br>Test class: com.ui.tests.LoginTest<br>Test method: verifies with valid user is able to login into the application<br>Parameters: User [emailAddress=rehankhan56390@gmail.com, password=12345]</td>
 <td></td>
-<td>8</td>
-<td>com.ui.tests.LoginTest@632ceb35</td></tr>
+<td>1</td>
+<td>com.ui.tests.LoginTest@4716be8b</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials()'><b>verify_Login_Valid_withExcelDATA__Credentials</b><br>Test class: com.ui.tests.LoginTest<br>Test method: verifies with valid user is able to login into the application<br>Parameters: User [emailAddress=angelatucker13287@suffermail.com, password=password]</td>
+<td></td>
+<td>2</td>
+<td>com.ui.tests.LoginTest@4716be8b</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.verify_Login_Valid_Credentials()'><b>verify_Login_Valid_Credentials</b><br>Test class: com.ui.tests.LoginTest<br>Test method: verifies with valid user is able to login into the application<br>Parameters: User [emailAddress=rehankhan56390@gmail.com, password=12345]</td>
+<td></td>
+<td>3</td>
+<td>com.ui.tests.LoginTest@4716be8b</td></tr>
 <tr>
 <td title='com.ui.tests.LoginTest.verify_Login_Valid_withCSVDATA__Credentials()'><b>verify_Login_Valid_withCSVDATA__Credentials</b><br>Test class: com.ui.tests.LoginTest<br>Test method: verifies with valid user is able to login into the application<br>Parameters: User [emailAddress=rehankhan56390@gmail.com, password=12345]</td>
 <td></td>
 <td>2</td>
-<td>com.ui.tests.LoginTest@632ceb35</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>com.ui.tests.LoginTest@4716be8b</td></tr>
 <tr>
-<td title='com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials()'><b>verify_Login_Valid_withExcelDATA__Credentials</b><br>Test class: com.ui.tests.LoginTest<br>Test method: verifies with valid user is able to login into the application<br>Parameters: User [emailAddress=angelatucker13287@suffermail.com, password=password]</td>
-<td><div><pre>java.lang.AssertionError: expected [Angel John1] but found [Angel John]
-	at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace872681190", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace872681190'><pre>java.lang.AssertionError: expected [Angel John1] but found [Angel John]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>8</td>
-<td>com.ui.tests.LoginTest@632ceb35</td></tr>
+<td title='com.ui.tests.LoginTest.verify_Login_Valid_Credentials()'><b>verify_Login_Valid_Credentials</b><br>Test class: com.ui.tests.LoginTest<br>Test method: verifies with valid user is able to login into the application<br>Parameters: User [emailAddress=rehankhan56390@gmail.com, password=12345]</td>
+<td></td>
+<td>1</td>
+<td>com.ui.tests.LoginTest@4716be8b</td></tr>
 <tr>
-<td title='com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials()'><b>verify_Login_Valid_withExcelDATA__Credentials</b><br>Test class: com.ui.tests.LoginTest<br>Test method: verifies with valid user is able to login into the application<br>Parameters: User [emailAddress=angelatucker13287@suffermail.com, password=password]</td>
-<td><div><pre>java.lang.AssertionError: expected [Angel John1] but found [Angel John]
-	at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1285427065", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1285427065'><pre>java.lang.AssertionError: expected [Angel John1] but found [Angel John]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>6</td>
-<td>com.ui.tests.LoginTest@632ceb35</td></tr>
-<tr>
-<td title='com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials()'><b>verify_Login_Valid_withExcelDATA__Credentials</b><br>Test class: com.ui.tests.LoginTest<br>Test method: verifies with valid user is able to login into the application<br>Parameters: User [emailAddress=angelatucker13287@suffermail.com, password=password]</td>
-<td><div><pre>java.lang.AssertionError: expected [Angel John1] but found [Angel John]
-	at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1794233869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1794233869'><pre>java.lang.AssertionError: expected [Angel John1] but found [Angel John]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.ui.tests.LoginTest.verify_Login_Valid_withExcelDATA__Credentials(LoginTest.java:61)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>2</td>
-<td>com.ui.tests.LoginTest@632ceb35</td></tr>
+<td title='com.ui.tests.LoginTest.verify_Login_Valid_Credentials()'><b>verify_Login_Valid_Credentials</b><br>Test class: com.ui.tests.LoginTest<br>Test method: verifies with valid user is able to login into the application<br>Parameters: User [emailAddress=rehankhan56390@gmail.com, password=12345]</td>
+<td></td>
+<td>0</td>
+<td>com.ui.tests.LoginTest@4716be8b</td></tr>
 </table><p>
 </body>
 </html>

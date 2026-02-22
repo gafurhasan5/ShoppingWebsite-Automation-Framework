@@ -1,26 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+=======
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2026-02-22T01:00:52 IST" name="Default suite" finished-at="2026-02-22T01:01:00 IST" duration-ms="8346">
+=======
+  <suite started-at="2026-02-22T15:51:37 IST" name="Automation Practice Test Suit" finished-at="2026-02-22T15:51:52 IST" duration-ms="14857">
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
     <groups>
       <group name="smoke">
         <method signature="ProductDetailTest.checkoutTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.ProductDetailTest@141e5bef]" name="checkoutTest" class="com.ui.tests.ProductDetailTest"/>
       </group> <!-- smoke -->
       <group name="sanity">
+<<<<<<< HEAD
         <method signature="ProductDetailTest.checkoutTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.ProductDetailTest@141e5bef]" name="checkoutTest" class="com.ui.tests.ProductDetailTest"/>
+=======
+        <method signature="LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" name="verify_Login_Valid_withCSVDATA__Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" name="verify_Login_Valid_withExcelDATA__Credentials" class="com.ui.tests.LoginTest"/>
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
       </group> <!-- sanity -->
       <group name="e2e">
+<<<<<<< HEAD
         <method signature="ProductDetailTest.checkoutTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.ProductDetailTest@141e5bef]" name="checkoutTest" class="com.ui.tests.ProductDetailTest"/>
+=======
+        <method signature="LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" name="verify_Login_Valid_Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" name="verify_Login_Valid_withCSVDATA__Credentials" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" name="verify_Login_Valid_withExcelDATA__Credentials" class="com.ui.tests.LoginTest"/>
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
       </group> <!-- e2e -->
     </groups>
+<<<<<<< HEAD
     <test started-at="2026-02-22T01:00:52 IST" name="Default test" finished-at="2026-02-22T01:01:00 IST" duration-ms="8346">
       <class name="com.ui.tests.ProductDetailTest">
         <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.tests.ProductDetailTest@141e5bef]" started-at="2026-02-22T01:00:53 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-22T01:00:57 IST" duration-ms="4299" status="PASS">
+=======
+    <test started-at="2026-02-22T15:51:37 IST" name="UI Automation Test" finished-at="2026-02-22T15:51:52 IST" duration-ms="14857">
+      <class name="com.ui.tests.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:37 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-22T15:51:42 IST" duration-ms="4994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+<<<<<<< HEAD
         <test-method signature="checkoutTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.ProductDetailTest@141e5bef]" started-at="2026-02-22T01:00:57 IST" name="checkoutTest" description="verifies if logged in User is able to buy a dress" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-22T01:01:00 IST" duration-ms="3362" status="PASS">
+=======
+        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:37 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-22T15:51:41 IST" duration-ms="3353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:39 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-22T15:51:43 IST" duration-ms="3998" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:41 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-22T15:51:44 IST" duration-ms="3415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User [emailAddress=rehankhan56390@gmail.com, password=12345]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Login_Valid_Credentials -->
+        <test-method signature="verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:42 IST" name="verify_Login_Valid_withCSVDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestCSVDataProvider" finished-at="2026-02-22T15:51:45 IST" duration-ms="2287" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User [emailAddress=rehankhan56390@gmail.com, password=12345]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Login_Valid_withCSVDATA__Credentials -->
+        <test-method signature="verify_Login_Valid_withExcelDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:43 IST" name="verify_Login_Valid_withExcelDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-22T15:51:45 IST" duration-ms="2355" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,8 +155,151 @@
           </params>
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- verify_Login_Valid_withExcelDATA__Credentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:44 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-22T15:51:45 IST" duration-ms="970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:45 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-22T15:51:45 IST" duration-ms="538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:45 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-22T15:51:45 IST" duration-ms="333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:45 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-22T15:51:48 IST" duration-ms="2532" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:45 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-22T15:51:48 IST" duration-ms="3046" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:48 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-22T15:51:49 IST" duration-ms="1067" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User [emailAddress=rehankhan56390@gmail.com, password=12345]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Login_Valid_Credentials -->
+        <test-method signature="verify_Login_Valid_withCSVDATA__Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:48 IST" name="verify_Login_Valid_withCSVDATA__Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestCSVDataProvider" finished-at="2026-02-22T15:51:49 IST" duration-ms="1165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User [emailAddress=rehankhan56390@gmail.com, password=12345]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Login_Valid_withCSVDATA__Credentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:49 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-22T15:51:49 IST" duration-ms="358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:49 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-22T15:51:51 IST" duration-ms="1710" status="PASS">
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- checkoutTest -->
       </class> <!-- com.ui.tests.ProductDetailTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:49 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-22T15:51:50 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verify_Login_Valid_Credentials(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:51 IST" name="verify_Login_Valid_Credentials" description="verifies with valid user is able to login into the application" data-provider="LoginTestDataProvider" finished-at="2026-02-22T15:51:52 IST" duration-ms="873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User [emailAddress=rehankhan56390@gmail.com, password=12345]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Login_Valid_Credentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@4716be8b]" started-at="2026-02-22T15:51:52 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-22T15:51:52 IST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ui.tests.LoginTest -->
+    </test> <!-- UI Automation Test -->
+  </suite> <!-- Automation Practice Test Suit -->
+>>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
 </testng-results>
