@@ -3,9 +3,9 @@
 <suite name="Automation Practice Test Suit" parallel="methods" thread-count="8"
 	verbose="1">
 	<test name="UI Automation Test">
-		<parameter name="browser" value="chrome" />
-		<parameter name="isLamdaTest" value="false" />
-		<parameter name="isHeadless" value="false" />
+		<parameter name="browser" value="${browser}" />
+		<parameter name="isLamdaTest" value="${isLamdaTes}" />
+		<parameter name="isHeadless" value="${isHeadless}" />
 		<classes>
 			<class name="com.ui.tests.LoginTest" />
 		</classes>

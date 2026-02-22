@@ -49,7 +49,7 @@ public class LoginTest extends TestBase {
 	public void verify_Login_Valid_withExcelDATA__Credentials(User user) {
 
 		assertEquals(homepage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
-				"Angel John1");
+				"Angel John");
 
 	}
 }
