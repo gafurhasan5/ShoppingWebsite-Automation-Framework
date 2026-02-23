@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ui.tests.ProductDetailTest">
+      <class name="com.ui.tests.AddNewFirstTimeAddressTest">
         <methods>
-          <include name="checkoutTest" invocation-numbers="0"/>
+          <include name="Test" invocation-numbers="0"/>
           <include name="setup"/>
-<<<<<<< HEAD
-=======
-          <include name="verify_Login_Valid_Credentials"/>
           <include name="tearDown"/>
->>>>>>> refs/heads/feture/headlessFeatureAndLamdaTestBranch
         </methods>
-      </class> <!-- com.ui.tests.ProductDetailTest -->
+      </class> <!-- com.ui.tests.AddNewFirstTimeAddressTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

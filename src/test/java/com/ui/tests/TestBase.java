@@ -33,10 +33,10 @@ public class TestBase {
 			@Optional("Chrome")String browser,   //@Optional use the run the one particular class test without run testing.xml file(all test run)
 			@Optional("false")boolean isLamdaTest,
 			@Optional("false")boolean isHeadless ,ITestResult result) {
-
+       this.isLamdaTest=isLamdaTest;
 		WebDriver lamdaDriver;
 
-		if (isLamdaTest) {
+		if (this.isLamdaTest) {
 
 			lamdaDriver = LamdaTestUtility.initializeLamdaTestSession(browser, result.getMethod().getMethodName());
 
@@ -46,6 +46,7 @@ public class TestBase {
 
 			logger.info("load the HomePage of website");
 			homepage = new HomePage(Browser.valueOf(browser.toUpperCase()), isHeadless);
+			//homepage = new HomePage(Browser.valueOf(browser.toUpperCase()), isHeadless);
 		}
 	}
 
