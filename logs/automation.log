@@ -1,206 +1,224 @@
-2026-02-54 17:31:50[main]INFO com.ui.listeners.TestListener Test Suit Started 
-2026-02-54 17:31:52[main]INFO com.ui.tests.AddNewFirstTimeAddressTest load the HomePage of website 
-2026-02-54 17:31:52[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
-2026-02-54 17:31:55[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
-2026-02-54 17:31:55[main]INFO com.ui.listeners.TestListener Test 
-2026-02-54 17:31:55[main]INFO com.ui.listeners.TestListener verifies first Time add address save 
-2026-02-54 17:31:55[main]INFO com.ui.listeners.TestListener [smoke, e2e, sanity] 
-2026-02-54 17:31:58[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
-2026-02-54 17:31:58[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
-2026-02-54 17:31:58[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
-2026-02-54 17:31:59[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
-2026-02-54 17:31:59[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:31:59[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
-2026-02-54 17:31:59[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:31:59[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
-2026-02-54 17:31:59[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
-2026-02-54 17:32:00[main]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.xpath: //a[contains(@title,'Add my first address')] 
-2026-02-54 17:32:30[main]ERROR com.ui.listeners.TestListener Test FAILED 
-2026-02-54 17:32:30[main]ERROR com.ui.listeners.TestListener org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //a[contains(@title,'Add my first address')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@title,'Add my first address')]"}.
-(tried for 30 seconds with 500 milliseconds interval)
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.77, chrome: {chromedriverVersion: 145.0.7632.77 (da516187054a..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64928}, goog:processID: 30024, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64928/devtoo..., se:cdpVersion: 145.0.7632.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d2955c4d6efb3644d34d32ec372ad055 
-2026-02-54 17:32:30[main]INFO com.ui.listeners.TestListener Capturing Screenshot for failed testCase 
-2026-02-54 17:32:30[main]INFO com.ui.listeners.TestListener Attaching the Screenshot to the HTML file 
-2026-02-54 17:32:31[main]INFO com.ui.tests.LoginTest load the HomePage of website 
-2026-02-54 17:32:31[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
-2026-02-54 17:32:32[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
-2026-02-54 17:32:33[main]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials 
-2026-02-54 17:32:33[main]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
-2026-02-54 17:32:33[main]INFO com.ui.listeners.TestListener [e2e, sanity] 
-2026-02-54 17:32:33[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
-2026-02-54 17:32:33[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
-2026-02-54 17:32:34[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
-2026-02-54 17:32:34[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
-2026-02-54 17:32:34[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:32:35[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
-2026-02-54 17:32:35[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:32:35[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
-2026-02-54 17:32:35[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
-2026-02-54 17:32:35[main]INFO com.ui.pages.MyAccountPage Finding Elements with locator:By.xpath: //a[@title='View my customer account']/span 
-2026-02-54 17:32:36[main]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visible:By.xpath: //a[@title='View my customer account']/span 
-2026-02-54 17:32:36[main]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials PASSED 
-2026-02-54 17:32:36[main]INFO com.ui.tests.LoginTest load the HomePage of website 
-2026-02-54 17:32:36[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
-2026-02-54 17:32:37[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
-2026-02-54 17:32:38[main]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials 
-2026-02-54 17:32:38[main]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
-2026-02-54 17:32:38[main]INFO com.ui.listeners.TestListener [e2e, sanity] 
-2026-02-54 17:32:38[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
-2026-02-54 17:32:38[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
-2026-02-54 17:32:38[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
-2026-02-54 17:32:38[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
-2026-02-54 17:32:39[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:32:39[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
-2026-02-54 17:32:39[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:32:39[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
-2026-02-54 17:32:39[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
-2026-02-54 17:32:40[main]INFO com.ui.pages.MyAccountPage Finding Elements with locator:By.xpath: //a[@title='View my customer account']/span 
-2026-02-54 17:32:40[main]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visible:By.xpath: //a[@title='View my customer account']/span 
-2026-02-54 17:32:40[main]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials PASSED 
-2026-02-54 17:32:40[main]INFO com.ui.tests.LoginTest load the HomePage of website 
-2026-02-54 17:32:40[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
-2026-02-54 17:32:41[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
-2026-02-54 17:32:42[main]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials 
-2026-02-54 17:32:42[main]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
-2026-02-54 17:32:42[main]INFO com.ui.listeners.TestListener [e2e, sanity] 
-2026-02-54 17:32:42[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
-2026-02-54 17:32:42[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
-2026-02-54 17:32:42[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
-2026-02-54 17:32:43[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
-2026-02-54 17:32:43[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:32:43[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
-2026-02-54 17:32:43[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:32:44[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
-2026-02-54 17:32:44[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
-2026-02-54 17:32:44[main]INFO com.ui.pages.MyAccountPage Finding Elements with locator:By.xpath: //a[@title='View my customer account']/span 
-2026-02-54 17:32:44[main]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visible:By.xpath: //a[@title='View my customer account']/span 
-2026-02-54 17:32:44[main]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials PASSED 
-2026-02-54 17:32:45[main]INFO com.ui.tests.LoginTest load the HomePage of website 
-2026-02-54 17:32:45[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
-2026-02-54 17:32:46[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
-2026-02-54 17:32:47[main]INFO com.ui.listeners.TestListener verify_Login_Valid_withCSVDATA__Credentials 
-2026-02-54 17:32:47[main]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
-2026-02-54 17:32:47[main]INFO com.ui.listeners.TestListener [e2e, sanity] 
-2026-02-54 17:32:47[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
-2026-02-54 17:32:47[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
-2026-02-54 17:32:47[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
-2026-02-54 17:32:48[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
-2026-02-54 17:32:48[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:32:48[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
-2026-02-54 17:32:48[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:32:48[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
-2026-02-54 17:32:48[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
-2026-02-54 17:32:49[main]INFO com.ui.pages.MyAccountPage Finding Elements with locator:By.xpath: //a[@title='View my customer account']/span 
-2026-02-54 17:32:49[main]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visible:By.xpath: //a[@title='View my customer account']/span 
-2026-02-54 17:32:49[main]INFO com.ui.listeners.TestListener verify_Login_Valid_withCSVDATA__Credentials PASSED 
-2026-02-54 17:32:49[main]INFO com.ui.tests.LoginTest load the HomePage of website 
-2026-02-54 17:32:49[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
-2026-02-54 17:32:51[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
-2026-02-54 17:32:52[main]INFO com.ui.listeners.TestListener verify_Login_Valid_withCSVDATA__Credentials 
-2026-02-54 17:32:52[main]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
-2026-02-54 17:32:52[main]INFO com.ui.listeners.TestListener [e2e, sanity] 
-2026-02-54 17:32:52[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
-2026-02-54 17:32:52[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
-2026-02-54 17:32:52[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
-2026-02-54 17:32:52[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
-2026-02-54 17:32:53[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:32:53[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
-2026-02-54 17:32:53[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:32:53[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
-2026-02-54 17:32:53[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
-2026-02-54 17:32:54[main]INFO com.ui.pages.MyAccountPage Finding Elements with locator:By.xpath: //a[@title='View my customer account']/span 
-2026-02-54 17:32:54[main]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visible:By.xpath: //a[@title='View my customer account']/span 
-2026-02-54 17:32:54[main]INFO com.ui.listeners.TestListener verify_Login_Valid_withCSVDATA__Credentials PASSED 
-2026-02-54 17:32:54[main]INFO com.ui.tests.LoginTest load the HomePage of website 
-2026-02-54 17:32:54[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
-2026-02-54 17:32:56[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
-2026-02-54 17:32:57[main]INFO com.ui.listeners.TestListener verify_Login_Valid_withExcelDATA__Credentials 
-2026-02-54 17:32:57[main]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
-2026-02-54 17:32:57[main]INFO com.ui.listeners.TestListener [e2e, sanity] 
-2026-02-54 17:32:57[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
-2026-02-54 17:32:57[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
-2026-02-54 17:32:57[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
-2026-02-54 17:32:57[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
-2026-02-54 17:32:57[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:32:57[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
-2026-02-54 17:32:57[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:32:57[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
-2026-02-54 17:32:58[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
-2026-02-54 17:32:58[main]INFO com.ui.pages.MyAccountPage Finding Elements with locator:By.xpath: //a[@title='View my customer account']/span 
-2026-02-54 17:32:58[main]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visible:By.xpath: //a[@title='View my customer account']/span 
-2026-02-54 17:32:58[main]INFO com.ui.listeners.TestListener verify_Login_Valid_withExcelDATA__Credentials PASSED 
-2026-02-54 17:32:59[main]INFO com.ui.tests.ProductCheckoutTest load the HomePage of website 
-2026-02-54 17:32:59[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
-2026-02-54 17:33:00[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
-2026-02-54 17:33:01[main]INFO com.ui.listeners.TestListener checkoutTest 
-2026-02-54 17:33:01[main]INFO com.ui.listeners.TestListener verifies if logged in User is able to buy a dress 
-2026-02-54 17:33:01[main]INFO com.ui.listeners.TestListener [smoke, e2e, sanity] 
-2026-02-54 17:33:01[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
-2026-02-54 17:33:01[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
-2026-02-54 17:33:01[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
-2026-02-54 17:33:02[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
-2026-02-54 17:33:02[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:33:02[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
-2026-02-54 17:33:02[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:33:02[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
-2026-02-54 17:33:02[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
-2026-02-54 17:33:03[main]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.id: search_query_top 
-2026-02-54 17:33:03[main]INFO com.ui.pages.MyAccountPage Elements Found and Now Enter Text 
-2026-02-54 17:33:03[main]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.name: submit_search 
-2026-02-54 17:33:03[main]INFO com.ui.pages.MyAccountPage Elements Found and Now Performing click 
-2026-02-54 17:33:03[main]INFO com.ui.pages.SearchPage Finding Elements with locator:By.xpath: //h5[@itemprop='name']/a 
-2026-02-54 17:33:04[main]INFO com.ui.pages.SearchPage Elements Found and Now printed the List: 
-2026-02-54 17:33:04[main]INFO com.ui.pages.ProductDetailPage Finding Elements with locatorBy.id: add_to_cart 
-2026-02-54 17:33:04[main]INFO com.ui.pages.ProductDetailPage Elements Found and Now Performing click 
-2026-02-54 17:33:04[main]INFO com.ui.pages.ProductDetailPage Finding Elements with locatorBy.xpath: //a[@title='Proceed to checkout'] 
-2026-02-54 17:33:05[main]INFO com.ui.pages.ProductDetailPage Elements Found and Now Performing click 
-2026-02-54 17:33:06[main]INFO com.ui.pages.ProductOrderDetailPage Finding Elements with locatorBy.xpath: //a[@class='button btn btn-default standard-checkout button-medium'] 
-2026-02-54 17:33:06[main]INFO com.ui.pages.ProductOrderDetailPage Elements Found and Now Performing click 
-2026-02-54 17:33:06[main]INFO com.ui.pages.ConfirmAddressPage Finding Elements with locatorBy.name: processAddress 
-2026-02-54 17:33:06[main]INFO com.ui.pages.ConfirmAddressPage Elements Found and Now Performing click 
-2026-02-54 17:33:06[main]INFO com.ui.pages.ShipmentPage Finding Elements with locatorBy.id: uniform-cgv 
-2026-02-54 17:33:07[main]INFO com.ui.pages.ShipmentPage Elements Found and Now Performing click 
-2026-02-54 17:33:07[main]INFO com.ui.pages.ShipmentPage Finding Elements with locatorBy.id: uniform-cgv 
-2026-02-54 17:33:07[main]INFO com.ui.pages.ShipmentPage Elements Found and Now Performing click 
-2026-02-54 17:33:07[main]INFO com.ui.listeners.TestListener checkoutTest PASSED 
-2026-02-54 17:33:08[main]INFO com.ui.tests.ProductSearchTest load the HomePage of website 
-2026-02-54 17:33:08[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
-2026-02-54 17:33:09[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
-2026-02-54 17:33:11[main]INFO com.ui.listeners.TestListener verifyProductSearchTest 
-2026-02-54 17:33:11[main]INFO com.ui.listeners.TestListener verifies if the logged in user able to to search product and correct product  are displayed 
-2026-02-54 17:33:11[main]INFO com.ui.listeners.TestListener [smoke, e2e, sanity] 
-2026-02-54 17:33:11[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
-2026-02-54 17:33:11[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
-2026-02-54 17:33:11[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
-2026-02-54 17:33:12[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
-2026-02-54 17:33:12[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:33:12[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
-2026-02-54 17:33:12[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
-2026-02-54 17:33:12[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
-2026-02-54 17:33:12[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
-2026-02-54 17:33:12[main]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.id: search_query_top 
-2026-02-54 17:33:13[main]INFO com.ui.pages.MyAccountPage Elements Found and Now Enter Text 
-2026-02-54 17:33:13[main]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.name: submit_search 
-2026-02-54 17:33:13[main]INFO com.ui.pages.MyAccountPage Elements Found and Now Performing click 
-2026-02-54 17:33:13[main]INFO com.ui.pages.SearchPage Finding Elements with locator:By.xpath: //h5[@itemprop='name']/a 
-2026-02-54 17:33:13[main]INFO com.ui.pages.SearchPage Elements Found and Now printed the List: 
-2026-02-54 17:33:13[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (b5fbde4ca535c37115eca8d0c7ae72c6)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-54 17:33:13[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (b5fbde4ca535c37115eca8d0c7ae72c6)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-54 17:33:13[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (b5fbde4ca535c37115eca8d0c7ae72c6)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-54 17:33:13[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (b5fbde4ca535c37115eca8d0c7ae72c6)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-54 17:33:13[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (b5fbde4ca535c37115eca8d0c7ae72c6)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-54 17:33:13[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (b5fbde4ca535c37115eca8d0c7ae72c6)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-54 17:33:13[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (b5fbde4ca535c37115eca8d0c7ae72c6)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-54 17:33:13[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (b5fbde4ca535c37115eca8d0c7ae72c6)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-54 17:33:13[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (b5fbde4ca535c37115eca8d0c7ae72c6)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-54 17:33:13[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (b5fbde4ca535c37115eca8d0c7ae72c6)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-54 17:33:13[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (b5fbde4ca535c37115eca8d0c7ae72c6)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-54 17:33:14[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (b5fbde4ca535c37115eca8d0c7ae72c6)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-54 17:33:14[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (b5fbde4ca535c37115eca8d0c7ae72c6)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-54 17:33:14[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (b5fbde4ca535c37115eca8d0c7ae72c6)] -> xpath: //h5[@itemprop='name']/a] 
-2026-02-54 17:33:14[main]INFO com.ui.listeners.TestListener verifyProductSearchTest PASSED 
-2026-02-54 17:33:14[main]INFO com.ui.listeners.TestListener Test Suit Started 
+2026-02-54 18:13:54[main]INFO com.ui.listeners.TestListener Test Suit Started 
+2026-02-54 18:13:56[main]INFO com.ui.tests.AddNewFirstTimeAddressTest load the HomePage of website 
+2026-02-54 18:13:56[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
+2026-02-54 18:14:01[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-54 18:14:02[main]INFO com.ui.listeners.TestListener Test 
+2026-02-54 18:14:02[main]INFO com.ui.listeners.TestListener verifies first Time add address save 
+2026-02-54 18:14:02[main]INFO com.ui.listeners.TestListener [smoke, e2e, sanity] 
+2026-02-54 18:14:05[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-54 18:14:05[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-54 18:14:05[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-54 18:14:06[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-54 18:14:06[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:07[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-54 18:14:07[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:07[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-54 18:14:07[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-54 18:14:07[main]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.xpath: //a[contains(@title,'Add my first address')] 
+2026-02-54 18:14:07[main]INFO com.ui.pages.MyAccountPage Elements Found and Now Performing click 
+2026-02-54 18:14:08[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: company 
+2026-02-54 18:14:08[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-54 18:14:08[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: address1 
+2026-02-54 18:14:08[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-54 18:14:08[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: address2 
+2026-02-54 18:14:08[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-54 18:14:08[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: postcode 
+2026-02-54 18:14:08[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-54 18:14:09[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: city 
+2026-02-54 18:14:09[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-54 18:14:09[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: phone 
+2026-02-54 18:14:09[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-54 18:14:09[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: phone_mobile 
+2026-02-54 18:14:09[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-54 18:14:09[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: other 
+2026-02-54 18:14:09[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-54 18:14:09[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: alias 
+2026-02-54 18:14:09[main]INFO com.ui.pages.AddressPage clear the Text field 
+2026-02-54 18:14:10[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: alias 
+2026-02-54 18:14:10[main]INFO com.ui.pages.AddressPage Elements Found and Now Enter Text 
+2026-02-54 18:14:10[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: id_state 
+2026-02-54 18:14:10[main]INFO com.ui.pages.AddressPage Selecting the Option:  
+2026-02-54 18:14:10[main]INFO com.ui.pages.AddressPage Finding Elements with locatorBy.id: submitAddress 
+2026-02-54 18:14:10[main]INFO com.ui.pages.AddressPage Elements Found and Now Performing click 
+2026-02-54 18:14:11[main]INFO com.ui.pages.AddressPage Finding Elements with locator:By.xpath: //h3[contains(text(),'Home Adresss')] 
+2026-02-54 18:14:11[main]INFO com.ui.pages.AddressPage Elements Found and Now returning the visible:By.xpath: //h3[contains(text(),'Home Adresss')] 
+2026-02-54 18:14:11[main]INFO com.ui.listeners.TestListener Test PASSED 
+2026-02-54 18:14:11[main]INFO com.ui.tests.LoginTest load the HomePage of website 
+2026-02-54 18:14:11[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
+2026-02-54 18:14:13[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-54 18:14:14[main]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials 
+2026-02-54 18:14:14[main]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
+2026-02-54 18:14:14[main]INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-02-54 18:14:14[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-54 18:14:14[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-54 18:14:14[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-54 18:14:15[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-54 18:14:15[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:15[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-54 18:14:15[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:15[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-54 18:14:15[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-54 18:14:15[main]INFO com.ui.pages.MyAccountPage Finding Elements with locator:By.xpath: //a[@title='View my customer account']/span 
+2026-02-54 18:14:15[main]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visible:By.xpath: //a[@title='View my customer account']/span 
+2026-02-54 18:14:15[main]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials PASSED 
+2026-02-54 18:14:16[main]INFO com.ui.tests.LoginTest load the HomePage of website 
+2026-02-54 18:14:16[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
+2026-02-54 18:14:17[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-54 18:14:18[main]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials 
+2026-02-54 18:14:18[main]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
+2026-02-54 18:14:18[main]INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-02-54 18:14:18[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-54 18:14:18[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-54 18:14:18[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-54 18:14:19[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-54 18:14:19[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:19[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-54 18:14:19[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:19[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-54 18:14:19[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-54 18:14:20[main]INFO com.ui.pages.MyAccountPage Finding Elements with locator:By.xpath: //a[@title='View my customer account']/span 
+2026-02-54 18:14:20[main]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visible:By.xpath: //a[@title='View my customer account']/span 
+2026-02-54 18:14:20[main]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials PASSED 
+2026-02-54 18:14:20[main]INFO com.ui.tests.LoginTest load the HomePage of website 
+2026-02-54 18:14:20[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
+2026-02-54 18:14:22[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-54 18:14:22[main]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials 
+2026-02-54 18:14:22[main]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
+2026-02-54 18:14:22[main]INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-02-54 18:14:22[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-54 18:14:22[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-54 18:14:23[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-54 18:14:23[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-54 18:14:23[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:23[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-54 18:14:23[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:24[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-54 18:14:24[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-54 18:14:24[main]INFO com.ui.pages.MyAccountPage Finding Elements with locator:By.xpath: //a[@title='View my customer account']/span 
+2026-02-54 18:14:24[main]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visible:By.xpath: //a[@title='View my customer account']/span 
+2026-02-54 18:14:24[main]INFO com.ui.listeners.TestListener verify_Login_Valid_Credentials PASSED 
+2026-02-54 18:14:25[main]INFO com.ui.tests.LoginTest load the HomePage of website 
+2026-02-54 18:14:25[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
+2026-02-54 18:14:26[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-54 18:14:27[main]INFO com.ui.listeners.TestListener verify_Login_Valid_withCSVDATA__Credentials 
+2026-02-54 18:14:27[main]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
+2026-02-54 18:14:27[main]INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-02-54 18:14:27[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-54 18:14:27[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-54 18:14:27[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-54 18:14:27[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-54 18:14:27[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:28[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-54 18:14:28[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:28[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-54 18:14:28[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-54 18:14:29[main]INFO com.ui.pages.MyAccountPage Finding Elements with locator:By.xpath: //a[@title='View my customer account']/span 
+2026-02-54 18:14:29[main]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visible:By.xpath: //a[@title='View my customer account']/span 
+2026-02-54 18:14:29[main]INFO com.ui.listeners.TestListener verify_Login_Valid_withCSVDATA__Credentials PASSED 
+2026-02-54 18:14:29[main]INFO com.ui.tests.LoginTest load the HomePage of website 
+2026-02-54 18:14:29[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
+2026-02-54 18:14:30[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-54 18:14:32[main]INFO com.ui.listeners.TestListener verify_Login_Valid_withCSVDATA__Credentials 
+2026-02-54 18:14:32[main]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
+2026-02-54 18:14:32[main]INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-02-54 18:14:32[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-54 18:14:32[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-54 18:14:32[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-54 18:14:33[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-54 18:14:33[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:33[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-54 18:14:33[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:33[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-54 18:14:34[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-54 18:14:34[main]INFO com.ui.pages.MyAccountPage Finding Elements with locator:By.xpath: //a[@title='View my customer account']/span 
+2026-02-54 18:14:34[main]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visible:By.xpath: //a[@title='View my customer account']/span 
+2026-02-54 18:14:34[main]INFO com.ui.listeners.TestListener verify_Login_Valid_withCSVDATA__Credentials PASSED 
+2026-02-54 18:14:34[main]INFO com.ui.tests.LoginTest load the HomePage of website 
+2026-02-54 18:14:34[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
+2026-02-54 18:14:36[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-54 18:14:37[main]INFO com.ui.listeners.TestListener verify_Login_Valid_withExcelDATA__Credentials 
+2026-02-54 18:14:37[main]INFO com.ui.listeners.TestListener verifies with valid user is able to login into the application 
+2026-02-54 18:14:37[main]INFO com.ui.listeners.TestListener [e2e, sanity] 
+2026-02-54 18:14:37[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-54 18:14:37[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-54 18:14:37[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-54 18:14:38[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-54 18:14:38[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:38[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-54 18:14:38[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:38[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-54 18:14:38[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-54 18:14:39[main]INFO com.ui.pages.MyAccountPage Finding Elements with locator:By.xpath: //a[@title='View my customer account']/span 
+2026-02-54 18:14:39[main]INFO com.ui.pages.MyAccountPage Elements Found and Now returning the visible:By.xpath: //a[@title='View my customer account']/span 
+2026-02-54 18:14:39[main]INFO com.ui.listeners.TestListener verify_Login_Valid_withExcelDATA__Credentials PASSED 
+2026-02-54 18:14:39[main]INFO com.ui.tests.ProductCheckoutTest load the HomePage of website 
+2026-02-54 18:14:39[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
+2026-02-54 18:14:41[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-54 18:14:42[main]INFO com.ui.listeners.TestListener checkoutTest 
+2026-02-54 18:14:42[main]INFO com.ui.listeners.TestListener verifies if logged in User is able to buy a dress 
+2026-02-54 18:14:42[main]INFO com.ui.listeners.TestListener [smoke, e2e, sanity] 
+2026-02-54 18:14:42[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-54 18:14:42[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-54 18:14:43[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-54 18:14:44[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-54 18:14:44[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:44[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-54 18:14:44[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:44[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-54 18:14:44[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-54 18:14:45[main]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.id: search_query_top 
+2026-02-54 18:14:45[main]INFO com.ui.pages.MyAccountPage Elements Found and Now Enter Text 
+2026-02-54 18:14:45[main]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.name: submit_search 
+2026-02-54 18:14:45[main]INFO com.ui.pages.MyAccountPage Elements Found and Now Performing click 
+2026-02-54 18:14:45[main]INFO com.ui.pages.SearchPage Finding Elements with locator:By.xpath: //h5[@itemprop='name']/a 
+2026-02-54 18:14:46[main]INFO com.ui.pages.SearchPage Elements Found and Now printed the List: 
+2026-02-54 18:14:47[main]INFO com.ui.pages.ProductDetailPage Finding Elements with locatorBy.id: add_to_cart 
+2026-02-54 18:14:47[main]INFO com.ui.pages.ProductDetailPage Elements Found and Now Performing click 
+2026-02-54 18:14:47[main]INFO com.ui.pages.ProductDetailPage Finding Elements with locatorBy.xpath: //a[@title='Proceed to checkout'] 
+2026-02-54 18:14:48[main]INFO com.ui.pages.ProductDetailPage Elements Found and Now Performing click 
+2026-02-54 18:14:48[main]INFO com.ui.pages.ProductOrderDetailPage Finding Elements with locatorBy.xpath: //a[@class='button btn btn-default standard-checkout button-medium'] 
+2026-02-54 18:14:48[main]INFO com.ui.pages.ProductOrderDetailPage Elements Found and Now Performing click 
+2026-02-54 18:14:49[main]INFO com.ui.pages.ConfirmAddressPage Finding Elements with locatorBy.name: processAddress 
+2026-02-54 18:14:49[main]INFO com.ui.pages.ConfirmAddressPage Elements Found and Now Performing click 
+2026-02-54 18:14:49[main]INFO com.ui.pages.ShipmentPage Finding Elements with locatorBy.id: uniform-cgv 
+2026-02-54 18:14:49[main]INFO com.ui.pages.ShipmentPage Elements Found and Now Performing click 
+2026-02-54 18:14:50[main]INFO com.ui.pages.ShipmentPage Finding Elements with locatorBy.id: uniform-cgv 
+2026-02-54 18:14:50[main]INFO com.ui.pages.ShipmentPage Elements Found and Now Performing click 
+2026-02-54 18:14:50[main]INFO com.ui.listeners.TestListener checkoutTest PASSED 
+2026-02-54 18:14:50[main]INFO com.ui.tests.ProductSearchTest load the HomePage of website 
+2026-02-54 18:14:50[main]INFO com.ui.pages.HomePage Launching Browser for CHROME 
+2026-02-54 18:14:52[main]INFO com.ui.pages.HomePage Visiting the websitehttps://automationpractice.techwithjatin.com/ 
+2026-02-54 18:14:52[main]INFO com.ui.listeners.TestListener verifyProductSearchTest 
+2026-02-54 18:14:52[main]INFO com.ui.listeners.TestListener verifies if the logged in user able to to search product and correct product  are displayed 
+2026-02-54 18:14:52[main]INFO com.ui.listeners.TestListener [smoke, e2e, sanity] 
+2026-02-54 18:14:52[main]INFO com.ui.pages.HomePage Trying to performimg click to go to Sign in Page 
+2026-02-54 18:14:52[main]INFO com.ui.pages.HomePage Finding Elements with locatorBy.linkText: Sign in 
+2026-02-54 18:14:53[main]INFO com.ui.pages.HomePage Elements Found and Now Performing click 
+2026-02-54 18:14:54[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: email 
+2026-02-54 18:14:54[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:54[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: passwd 
+2026-02-54 18:14:54[main]INFO com.ui.pages.LoginPage Elements Found and Now Enter Text 
+2026-02-54 18:14:54[main]INFO com.ui.pages.LoginPage Finding Elements with locatorBy.id: SubmitLogin 
+2026-02-54 18:14:54[main]INFO com.ui.pages.LoginPage Elements Found and Now Performing click 
+2026-02-54 18:14:55[main]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.id: search_query_top 
+2026-02-54 18:14:55[main]INFO com.ui.pages.MyAccountPage Elements Found and Now Enter Text 
+2026-02-54 18:14:55[main]INFO com.ui.pages.MyAccountPage Finding Elements with locatorBy.name: submit_search 
+2026-02-54 18:14:55[main]INFO com.ui.pages.MyAccountPage Elements Found and Now Performing click 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:By.xpath: //h5[@itemprop='name']/a 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Elements Found and Now printed the List: 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a2b019ce6ffe959aa7d0d13c837c7706)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a2b019ce6ffe959aa7d0d13c837c7706)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a2b019ce6ffe959aa7d0d13c837c7706)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a2b019ce6ffe959aa7d0d13c837c7706)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a2b019ce6ffe959aa7d0d13c837c7706)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a2b019ce6ffe959aa7d0d13c837c7706)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a2b019ce6ffe959aa7d0d13c837c7706)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a2b019ce6ffe959aa7d0d13c837c7706)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a2b019ce6ffe959aa7d0d13c837c7706)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a2b019ce6ffe959aa7d0d13c837c7706)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a2b019ce6ffe959aa7d0d13c837c7706)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a2b019ce6ffe959aa7d0d13c837c7706)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a2b019ce6ffe959aa7d0d13c837c7706)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-54 18:14:56[main]INFO com.ui.pages.SearchPage Finding Elements with locator:[[ChromeDriver: chrome on windows (a2b019ce6ffe959aa7d0d13c837c7706)] -> xpath: //h5[@itemprop='name']/a] 
+2026-02-54 18:14:56[main]INFO com.ui.listeners.TestListener verifyProductSearchTest PASSED 
+2026-02-54 18:14:57[main]INFO com.ui.listeners.TestListener Test Suit Started 

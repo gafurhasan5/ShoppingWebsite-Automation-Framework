@@ -2,8 +2,8 @@
 
     <test name="UI Automation Test">
 
-       	<parameter name="browser" value="chrome" />
-		<parameter name="isLamdaTest" value="${isLamdaTes}" />
+       	<parameter name="browser" value="${browser}" />
+		<parameter name="isLamdaTest" value="${isLamdaTest}" />
 		<parameter name="isHeadless" value="${isHeadless}" />
 
         <classes>
