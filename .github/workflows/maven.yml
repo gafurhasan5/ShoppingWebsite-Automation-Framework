@@ -54,18 +54,18 @@ jobs:
 
       - name: Copy Report to gh-pages Folder
         if: always()
-        run: 
-           mkdir -p public/extent-reports
-           cp -R report.html public/extent-reports
-           cp -R screenshots/ public/extent-reports/screenshots
-           ls -l
-           
+        run: |
+         mkdir -p public/extent-reports
+         cp report.html public/extent-reports/
+          cp -R screenshots public/extent-reports/
+         ls -R public
       - name: Deploy
         if: always()
         uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder:  public/extent-reports/
-          tokens: ${{secrets.PAT123}}
-          clean: true
+      with:
+    folder: public/extent-reports/
+    token: ${{ secrets.PAT123 }}
+    branch: gh-pages
+    clean: true
 
         
