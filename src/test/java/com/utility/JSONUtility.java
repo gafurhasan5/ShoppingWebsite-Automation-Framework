@@ -12,7 +12,7 @@ import com.ui.pojo.Environment;
 public class JSONUtility {
 	public static String readJSON(Env env){
 		Gson gson = new Gson();
-		File jsonFile = new File(System.getProperty("user.dir") + "\\config\\config.json"); // find path of where is url
+		File jsonFile = new File(System.getProperty("user.dir") + "//config//config.json"); // find path of where is url
 																							// path file
 		FileReader fileReader=null;
 		try {

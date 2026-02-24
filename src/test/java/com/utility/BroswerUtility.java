@@ -202,7 +202,8 @@ public abstract class BroswerUtility {
 		Date date = new Date();
 		SimpleDateFormat formate = new SimpleDateFormat("HH-mm-ss");
 		String timeStamp = formate.format(date);
-		String path = System.getProperty("user.dir") + "//screenshots//" + name + "-" + timeStamp + ".png";
+		//String path = System.getProperty("user.dir") + "//screenshots//" + name + "-" + timeStamp + ".png";
+		String path = "./screenshots/" + name + " - " + timeStamp + ".png"; //relative xpath
 		File scFileDest = new File(path);
 		try {
 			FileUtils.copyFile(scData, scFileDest);
