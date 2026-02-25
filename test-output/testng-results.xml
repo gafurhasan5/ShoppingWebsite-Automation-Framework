@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-23T17:24:01 IST" name="Default suite" finished-at="2026-02-23T17:24:13 IST" duration-ms="12036">
+  <suite started-at="2026-02-25T13:32:46 IST" name="Default suite" finished-at="2026-02-25T13:32:58 IST" duration-ms="12449">
     <groups>
-      <group name="smoke">
-        <method signature="ProductCheckoutTest.checkoutTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.ProductCheckoutTest@2f67b837]" name="checkoutTest" class="com.ui.tests.ProductCheckoutTest"/>
-      </group> <!-- smoke -->
-      <group name="sanity">
-        <method signature="ProductCheckoutTest.checkoutTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.ProductCheckoutTest@2f67b837]" name="checkoutTest" class="com.ui.tests.ProductCheckoutTest"/>
-      </group> <!-- sanity -->
-      <group name="e2e">
-        <method signature="ProductCheckoutTest.checkoutTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.ProductCheckoutTest@2f67b837]" name="checkoutTest" class="com.ui.tests.ProductCheckoutTest"/>
-      </group> <!-- e2e -->
     </groups>
-    <test started-at="2026-02-23T17:24:01 IST" name="Default test" finished-at="2026-02-23T17:24:13 IST" duration-ms="12036">
-      <class name="com.ui.tests.ProductCheckoutTest">
-        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.ProductCheckoutTest@2f67b837]" started-at="2026-02-23T17:24:03 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-23T17:24:07 IST" duration-ms="4097" status="PASS">
+    <test started-at="2026-02-25T13:32:46 IST" name="Default test" finished-at="2026-02-25T13:32:58 IST" duration-ms="12449">
+      <class name="com.ui.tests.RegisterTest">
+        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.RegisterTest@35432107]" started-at="2026-02-25T13:32:46 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-25T13:32:50 IST" duration-ms="3875" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,29 +26,56 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ProductCheckoutTest.checkoutTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.ProductCheckoutTest@2f67b837] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=RegisterTest.verify_successful_register()[pri:1, instance:com.ui.tests.RegisterTest@35432107] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkoutTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.ProductCheckoutTest@2f67b837]" started-at="2026-02-23T17:24:07 IST" name="checkoutTest" description="verifies if logged in User is able to buy a dress" data-provider="LoginTestExcelDataProvider" finished-at="2026-02-23T17:24:13 IST" duration-ms="5803" status="PASS">
+        <test-method signature="verify_successful_register()[pri:1, instance:com.ui.tests.RegisterTest@35432107]" started-at="2026-02-25T13:32:50 IST" name="verify_successful_register" finished-at="2026-02-25T13:32:53 IST" duration-ms="3464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_successful_register -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.RegisterTest@35432107]" started-at="2026-02-25T13:32:53 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-25T13:32:53 IST" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.RegisterTest@35432107]" started-at="2026-02-25T13:32:53 IST" name="setup" description="load the HomePage of website" finished-at="2026-02-25T13:32:57 IST" duration-ms="3249" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[User [emailAddress=angelatucker13287@suffermail.com, password=password]]]>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=RegisterTest.verify_Donot_Register_Existing_Email()[pri:2, instance:com.ui.tests.RegisterTest@35432107] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.ProductCheckoutTest@2f67b837]" started-at="2026-02-23T17:24:13 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-23T17:24:13 IST" duration-ms="435" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="verify_Donot_Register_Existing_Email()[pri:2, instance:com.ui.tests.RegisterTest@35432107]" started-at="2026-02-25T13:32:57 IST" name="verify_Donot_Register_Existing_Email" finished-at="2026-02-25T13:32:58 IST" duration-ms="1175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Donot_Register_Existing_Email -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.RegisterTest@35432107]" started-at="2026-02-25T13:32:58 IST" name="tearDown" description="Tear Down the browser" finished-at="2026-02-25T13:32:58 IST" duration-ms="294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.ui.tests.ProductCheckoutTest -->
+      </class> <!-- com.ui.tests.RegisterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
