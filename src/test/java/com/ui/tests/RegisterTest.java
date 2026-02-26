@@ -14,10 +14,8 @@ public class RegisterTest extends TestBase {
 	@Test(priority = 1, description = "verify_register_with valid Credentials")
 	public void verify_successful_register() {
 		RegisterTestData data = JSONUtility.getTestData();
-		// RegisterUser registeruser=data.getValidUser();
+		
 		RegisterUser registeruser = data.getValidUser();
-		// MyAccountPage myaccountpage =
-		// homepage.goToRegisterPage().doWithEmailAccountCreationRegisterPage("Hassan213223@gmail.com").doRegisterWith("Rehan","Khane","12345");
 		MyAccountPage myaccountpage = homepage.goToRegisterPage()
 				.doWithEmailAccountCreationRegisterPage(registeruser.getEmail())
 				.doRegisterWith(registeruser.getFirstName(), registeruser.getLastName(), registeruser.getPassword());
