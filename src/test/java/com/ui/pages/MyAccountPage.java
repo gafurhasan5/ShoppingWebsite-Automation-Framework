@@ -11,6 +11,7 @@ public final class MyAccountPage extends BroswerUtility {
 	private static final By SEARCH_BOX_TEXT_LOCATOR = By.id("search_query_top");
 	private static final By SEARCH_BUTTON_TEXT_LOCATOR = By.name("submit_search");
 	private static final By ADD_NEW_ADDRESS_LINK_LOCATOR = By.xpath("//a[contains(@title,'Add my first address')]");
+	private static final By SUCCESS_TEXT_LOCATOR = By.xpath("//p[@class='alert alert-success']");
 
 	// a[@title='Add my first address']
 	public MyAccountPage(WebDriver driver) {
@@ -30,6 +31,9 @@ public final class MyAccountPage extends BroswerUtility {
 	public AddressPage goToAddressPage() {
 		clickOn(ADD_NEW_ADDRESS_LINK_LOCATOR);
 		return new AddressPage(getDriver());
+	}
+	public String getSucessHeading() {
+		return getVisibilityText1(SUCCESS_TEXT_LOCATOR);
 	}
 
 }

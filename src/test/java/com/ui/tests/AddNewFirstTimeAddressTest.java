@@ -16,7 +16,7 @@ public class AddNewFirstTimeAddressTest extends TestBase {
 	public void Test(User user) {
 		// address=new AddressPOJO("CG","AURAI","BHADHOHI", "PUNE", "983983", "8738826601","8738826601", "Hello gafur", "Home Adresss", "Goa");
 		address=FakerAddressUtility.getFakeAddess();
-		String AddressHeading=homepage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).goToAddressPage().saveAddess( address);
+		String AddressHeading=homepage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).goToAddressPage().saveAddess(address);
 		Assert.assertEquals(AddressHeading,address.getAddressAlias().toUpperCase());
 	}
 }
