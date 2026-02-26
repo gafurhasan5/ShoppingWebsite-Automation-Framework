@@ -40,7 +40,7 @@ public abstract class BroswerUtility {
 	public BroswerUtility(WebDriver driver) {
 		super();
 		this.driver.set(driver);// create instance of driver variable
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30L));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(50L));
 	}
 
 	public BroswerUtility(Browser browserName, boolean isHeadless) {
@@ -51,10 +51,10 @@ public abstract class BroswerUtility {
 				options.addArguments("--headless=new");
 				options.addArguments("--window-size=1920,1080");
 				driver.set(new ChromeDriver(options));
-				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(50L));
 			} else {
 				driver.set(new ChromeDriver());
-				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(50L));
 			}
 
 		} else if (browserName == Browser.EDGE) {
@@ -63,11 +63,11 @@ public abstract class BroswerUtility {
 				options.addArguments("--headless=new");// headless
 				options.addArguments("disable-gpu");
 				driver.set(new EdgeDriver(options));
-				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(50L));
 				;
 			} else {
 				driver.set(new EdgeDriver());
-				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(50L));
 			}
 		} else if (browserName == Browser.FIREFOX) {
 
@@ -76,10 +76,10 @@ public abstract class BroswerUtility {
 				options.addArguments("--headless=old");// headless
 				options.addArguments("disable-gpu");
 				driver.set(new FirefoxDriver(options));
-				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(50L));
 			} else {
 				driver.set(new FirefoxDriver());
-				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
+				wait = new WebDriverWait(driver.get(), Duration.ofSeconds(50L));
 			}
 			
 		} else {

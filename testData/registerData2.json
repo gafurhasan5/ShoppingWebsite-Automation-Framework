@@ -1,0 +1,38 @@
+{
+ "validUsers": [
+   {
+     "email": "rehankhan18@gmail.com",
+     "firstName": "Rehan",
+     "lastName": "Khan",
+     "password": "Test@123"
+   },
+   {
+     "email": "Aamirsheik1@gmail.com",
+     "firstName": "Aamir",
+     "lastName": "Shaikh",
+     "password": "Test@456"
+   }
+ ],
+ "existingUsers": [
+   {
+     "email": "hassan1223@gmail.com"
+   },
+   {
+     "email": "rehan2@gmail.com"
+   }
+ ],
+ "invalidUsers": [
+   {
+     "email": "invalidemail",
+     "firstName": "Test",
+     "lastName": "User",
+     "password": "123"
+   },
+   {
+     "email": "",
+     "firstName": "",
+     "lastName": "",
+     "password": ""
+   }
+ ]
+}

@@ -8,6 +8,7 @@ import com.constants.Env;
 import com.google.gson.Gson;
 import com.ui.pojo.Config;
 import com.ui.pojo.Environment;
+import com.ui.pojo.RegisterTestData;
 
 public class JSONUtility {
 	public static String readJSON(Env env){
@@ -25,4 +26,23 @@ public class JSONUtility {
 		//System.out.println(environment.getUrl());
 		return environment.getUrl();
 	}
+	//read json file for register data
+	 public static RegisterTestData getTestData() {
+	       try {
+	           FileReader reader = new FileReader(System.getProperty("user.dir") +"//testData//registerData.json");
+	           return new Gson().fromJson(reader, RegisterTestData.class);
+	       } catch (Exception e) {
+	           throw new RuntimeException(e);
+	       }
+	   }
+	 public static RegisterTestData getTestMutilpleData() {
+	       try {
+	           FileReader reader = new FileReader(System.getProperty("user.dir") +"//testData//registerData2.json");
+	           return new Gson().fromJson(reader, RegisterTestData.class);
+	       } catch (Exception e) {
+	           throw new RuntimeException(e);
+	       }
+	   }
+	
+	
 }

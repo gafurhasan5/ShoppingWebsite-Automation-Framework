@@ -24,7 +24,7 @@ public final class HomePage extends BroswerUtility {
 		// goToWebSite("https://automationpractice.techwithjatin.com/");
 		// goToWebSite(readProperty(QA,"URL")); //for properties file
 		goToWebSite(JSONUtility.readJSON(QA)); // for JSON file
-
+		   maximizeWindow();
 	}
 
 	public HomePage(WebDriver driver) {
@@ -45,7 +45,15 @@ public final class HomePage extends BroswerUtility {
 	}
 
 	public void quitBrowser() {
+		logger.info("Trying to perform close the browser....");
 		getDriver().quit();
 	}
+//	public void refreshBrowser() {
+//		logger.info("Trying to perform refresh the browser....");
+//		getDriver().manage().deleteAllCookies();
+//		//getDriver().r
+//		getDriver().close();
+//		
+//	}
 
 }
