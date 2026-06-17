@@ -17,6 +17,8 @@ import com.ui.pojo.User;
 public class ExcelReaderUtility {
 	public static Iterator<User> readExcelFile(String fileName) {
 		File xlxsFile = new File(System.getProperty("user.dir") + "//testData//" + fileName);
+		//Apache POI internally creates the FileInputStream for you that y I am not using
+		//FileInputStream is not used because XSSFWorkbook(File) internally handles it, but resource closing must be done correctly.
 		XSSFWorkbook xssfWorkbook = null;
 		Row row;
 		Cell emailAddresscell;

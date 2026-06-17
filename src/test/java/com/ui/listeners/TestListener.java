@@ -61,7 +61,7 @@ public class TestListener implements ITestListener {
 	}
 
 	public void onFinish(ITestContext context) {
-		logger.info("Test Suit Started");
+		logger.info("Test Suit closed");
 		ExtentReporterUtility.flushReport();
 	}
 

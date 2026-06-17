@@ -36,13 +36,16 @@ public class LoginDataProvider {
 	 }
 	 return dataToReturn.iterator();
 	 
+	 
  }
+          //DataProvider Using CSV file
          @DataProvider(name="LoginTestCSVDataProvider")
         public Iterator<User>loginCSVDataProvider()
         {
         	return CSVReaderUtility.readCSVFile("loginData.csv");
         }
          
+         //DataProvider Using Excel
          @DataProvider(name="LoginTestExcelDataProvider")
          public Iterator<User>loginExcelDataProvider()
          {
