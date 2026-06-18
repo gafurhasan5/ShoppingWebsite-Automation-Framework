@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven-3.9'   // ✅ must match Jenkins config
+        maven 'Maven-3.9'
     }
 
     options {
@@ -24,7 +24,6 @@ pipeline {
 
     stages {
 
-        // ✅ Checkout
         stage('Checkout Code') {
             steps {
                 git branch: 'master',
@@ -32,34 +31,30 @@ pipeline {
             }
         }
 
-        // ✅ Build
         stage('Build Project') {
             steps {
-                sh 'mvn clean compile'
+                bat 'mvn clean compile'
             }
         }
 
-        // ✅ Execute TestNG
         stage('Run Automation Tests') {
             steps {
-                sh """
-                mvn test \
-                -DsuiteXmlFile=${SUITE_FILE} \
-                -Dbrowser=${params.BROWSER} \
-                -Denv=${params.ENV} \
+                bat """
+                mvn test ^
+                -DsuiteXmlFile=${SUITE_FILE} ^
+                -Dbrowser=${params.BROWSER} ^
+                -Denv=${params.ENV} ^
                 -DisHeadless=${params.HEADLESS}
                 """
             }
         }
 
-        // ✅ Publish Test Results
         stage('Publish Results') {
             steps {
                 junit 'target/surefire-reports/*.xml'
             }
         }
 
-        // ✅ Archive Reports (Screenshots + Extent)
         stage('Archive Reports') {
             steps {
                 archiveArtifacts artifacts: '''
@@ -72,38 +67,22 @@ pipeline {
         }
     }
 
-    // ✅ Email Notifications
     post {
 
         success {
             emailext(
                 subject: "✅ SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: """
-                <h2>✅ Build Passed</h2>
-                <p><b>Job:</b> ${env.JOB_NAME}</p>
-                <p><b>Build No:</b> ${env.BUILD_NUMBER}</p>
-                <p><b>Browser:</b> ${params.BROWSER}</p>
-                <p><b>Environment:</b> ${params.ENV}</p>
-                <p><a href="${env.BUILD_URL}">Open Jenkins Report</a></p>
-                """,
-                to: "${EMAIL_TO}",
-                mimeType: 'text/html'
+                body: "Build Passed: ${env.BUILD_URL}",
+                to: "${EMAIL_TO}"
             )
         }
 
         failure {
             emailext(
                 subject: "❌ FAILURE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: """
-                <h2>❌ Build Failed</h2>
-                <p><b>Job:</b> ${env.JOB_NAME}</p>
-                <p><b>Build No:</b> ${env.BUILD_NUMBER}</p>
-                <p><a href="${env.BUILD_URL}">Check Failure</a></p>
-                """,
+                body: "Build Failed: ${env.BUILD_URL}",
                 to: "${EMAIL_TO}",
-                mimeType: 'text/html',
-                attachLog: true,
-                attachmentsPattern: '**/screenshots/*.png, **/ExtentReports/*.html'
+                attachLog: true
             )
         }
 
