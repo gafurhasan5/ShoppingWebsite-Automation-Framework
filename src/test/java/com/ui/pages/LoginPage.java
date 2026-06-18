@@ -7,6 +7,7 @@ import com.utility.BroswerUtility;
 
 public final class LoginPage extends BroswerUtility {
 
+	//locator for login page
 	static final By EMAIL_TEXT_BOX_LOCATOR = By.id("email");
 	static final By PASSWORD_TEXT_BOX_LOCATOR = By.id("passwd");
 	static final By SUBMIT_BUTTON_LOCATOR= By.id("SubmitLogin");
