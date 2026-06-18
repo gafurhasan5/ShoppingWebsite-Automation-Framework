@@ -2,8 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven-3.9.16'
-        jdk 'JDK-11'
+        maven 'Maven-3.9'   // ✅ must match Jenkins config
     }
 
     options {
@@ -25,22 +24,22 @@ pipeline {
 
     stages {
 
-        // ✅ 1. Checkout
+        // ✅ Checkout
         stage('Checkout Code') {
             steps {
                 git branch: 'master',
-                url: 'https://github.com/gafurhasan5/ShoppingWebsite-Automation-Framework.git'
+                    url: 'https://github.com/gafurhasan5/ShoppingWebsite-Automation-Framework.git'
             }
         }
 
-        // ✅ 2. Build
+        // ✅ Build
         stage('Build Project') {
             steps {
                 sh 'mvn clean compile'
             }
         }
 
-        // ✅ 3. Run TestNG
+        // ✅ Execute TestNG
         stage('Run Automation Tests') {
             steps {
                 sh """
@@ -53,14 +52,14 @@ pipeline {
             }
         }
 
-        // ✅ 4. Publish JUnit Results
+        // ✅ Publish Test Results
         stage('Publish Results') {
             steps {
                 junit 'target/surefire-reports/*.xml'
             }
         }
 
-        // ✅ 5. Archive Reports (IMPORTANT for Extent)
+        // ✅ Archive Reports (Screenshots + Extent)
         stage('Archive Reports') {
             steps {
                 archiveArtifacts artifacts: '''
@@ -68,13 +67,12 @@ pipeline {
                     **/logs/*.log,
                     **/test-output/**/*.*,
                     **/ExtentReports/*.html
-                ''',
-                allowEmptyArchive: true
+                ''', allowEmptyArchive: true
             }
         }
     }
 
-    // ✅ ✅ EMAIL SECTION
+    // ✅ Email Notifications
     post {
 
         success {
@@ -82,13 +80,11 @@ pipeline {
                 subject: "✅ SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """
                 <h2>✅ Build Passed</h2>
-
                 <p><b>Job:</b> ${env.JOB_NAME}</p>
                 <p><b>Build No:</b> ${env.BUILD_NUMBER}</p>
                 <p><b>Browser:</b> ${params.BROWSER}</p>
                 <p><b>Environment:</b> ${params.ENV}</p>
-
-                <p>🔗 <a href="${env.BUILD_URL}">Click here to open Jenkins</a></p>
+                <p><a href="${env.BUILD_URL}">Open Jenkins Report</a></p>
                 """,
                 to: "${EMAIL_TO}",
                 mimeType: 'text/html'
@@ -100,12 +96,9 @@ pipeline {
                 subject: "❌ FAILURE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """
                 <h2>❌ Build Failed</h2>
-
                 <p><b>Job:</b> ${env.JOB_NAME}</p>
                 <p><b>Build No:</b> ${env.BUILD_NUMBER}</p>
-                <p><b>Browser:</b> ${params.BROWSER}</p>
-
-                <p>🔗 <a href="${env.BUILD_URL}">Check Failure</a></p>
+                <p><a href="${env.BUILD_URL}">Check Failure</a></p>
                 """,
                 to: "${EMAIL_TO}",
                 mimeType: 'text/html',
