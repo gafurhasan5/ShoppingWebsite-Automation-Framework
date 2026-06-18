@@ -72,7 +72,7 @@ pipeline {
         success {
             emailext(
                 subject: "✅ SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: "Build Passed: ${env.BUILD_URL}",
+                body: "Build Passed ✅ 👉 ${env.BUILD_URL}",
                 to: "${EMAIL_TO}"
             )
         }
@@ -80,9 +80,10 @@ pipeline {
         failure {
             emailext(
                 subject: "❌ FAILURE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: "Build Failed: ${env.BUILD_URL}",
+                body: "Build Failed ❌ 👉 ${env.BUILD_URL}",
                 to: "${EMAIL_TO}",
-                attachLog: true
+                attachLog: true,
+                attachmentsPattern: '**/screenshots/*.png'
             )
         }
 
