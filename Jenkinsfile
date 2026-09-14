@@ -1,10 +1,10 @@
 pipeline {
-    agent any
-    
-triggers {
-   // githubPush()
-    5 18 * * *
 
+    agent any
+
+    triggers {
+        cron('5 18 * * *')
+        // githubPush()
     }
 
     tools {
@@ -18,9 +18,23 @@ triggers {
     }
 
     parameters {
-        choice(name: 'BROWSER', choices: ['chrome', 'firefox'], description: 'Browser')
-        choice(name: 'ENV', choices: ['qa', 'stage'], description: 'Environment')
-        booleanParam(name: 'HEADLESS', defaultValue: true, description: 'Headless Mode')
+        choice(
+            name: 'BROWSER',
+            choices: ['chrome', 'firefox'],
+            description: 'Browser'
+        )
+
+        choice(
+            name: 'ENV',
+            choices: ['qa', 'stage'],
+            description: 'Environment'
+        )
+
+        booleanParam(
+            name: 'HEADLESS',
+            defaultValue: true,
+            description: 'Headless Mode'
+        )
     }
 
     environment {
@@ -45,13 +59,7 @@ triggers {
 
         stage('Run Automation Tests') {
             steps {
-                bat """
-                mvn test ^
-                -DsuiteXmlFile=${SUITE_FILE} ^
-                -Dbrowser=${params.BROWSER} ^
-                -Denv=${params.ENV} ^
-                -DisHeadless=${params.HEADLESS}
-                """
+                bat "mvn test -DsuiteXmlFile=${env.SUITE_FILE} -Dbrowser=${params.BROWSER} -Denv=${params.ENV} -DisHeadless=${params.HEADLESS}"
             }
         }
 
@@ -63,12 +71,10 @@ triggers {
 
         stage('Archive Reports') {
             steps {
-                archiveArtifacts artifacts: '''
-                    **/screenshots/*.png,
-                    **/logs/*.log,
-                    **/test-output/**/*.*,
-                    **/ExtentReports/*.html
-                ''', allowEmptyArchive: true
+                archiveArtifacts(
+                    artifacts: '**/screenshots/*.png, **/logs/*.log, **/test-output/**/*.*, **/ExtentReports/*.html',
+                    allowEmptyArchive: true
+                )
             }
         }
     }
@@ -77,17 +83,17 @@ triggers {
 
         success {
             emailext(
-                subject: "✅ SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: "Build Passed ✅ 👉 ${env.BUILD_URL}",
-                to: "${EMAIL_TO}"
+                subject: "SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: "Build Passed: ${env.BUILD_URL}",
+                to: "${env.EMAIL_TO}"
             )
         }
 
         failure {
             emailext(
-                subject: "❌ FAILURE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: "Build Failed ❌ 👉 ${env.BUILD_URL}",
-                to: "${EMAIL_TO}",
+                subject: "FAILURE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: "Build Failed: ${env.BUILD_URL}",
+                to: "${env.EMAIL_TO}",
                 attachLog: true,
                 attachmentsPattern: '**/screenshots/*.png'
             )
