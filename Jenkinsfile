@@ -2,13 +2,13 @@ pipeline {
 
     agent any
 
-    triggers {
-        cron('5 18 * * *')
-        // githubPush()
-    }
+   triggers {
+    cron('40 18 * * *')
+    // githubPush()
+}
 
     tools {
-        maven 'Maven-3.9'
+        maven 'C:\\apache-maven-3.9.12'
     }
 
     options {
@@ -104,3 +104,4 @@ pipeline {
         }
     }
 }
+
