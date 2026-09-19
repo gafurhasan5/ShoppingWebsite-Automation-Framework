@@ -8,6 +8,7 @@
 	<name>Automation-ShoppingWebsite</name>
 	<description>Automation Selenium Testng framework For Shopping Website of
 		AutomationPractice.pl</description>
+	
 	<build>
 		<plugins>
 			<plugin>
