@@ -8,7 +8,7 @@ pipeline {
 }
 
     tools {
-        maven 'C:\\apache-maven-3.9.12'
+        maven 'Maven-3.9'
     }
 
     options {
