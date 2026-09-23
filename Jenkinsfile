@@ -3,7 +3,7 @@ pipeline {
     agent any
 
    triggers {
-    cron('40 18 * * *')
+    cron('0 14 * * *')
     // githubPush()
 }
 
